@@ -1,0 +1,214 @@
+
+<!doctype html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head><title>Python: module Mezmory</title>
+</head><body bgcolor="#f0f0f8">
+
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="heading">
+<tr bgcolor="#7799ee">
+<td valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial">&nbsp;<br><big><big><strong>Mezmory</strong></big></big></font></td
+><td align=right valign=bottom
+><font color="#ffffff" face="helvetica, arial"><a href=".">index</a><br><a href="file:///C|/zach/live/projects/friend%27s/josiah%27s/mezmory/mezmory.py">c:\zach\live\projects\friend's\josiah's\mezmory\mezmory.py</a></font></td></tr></table>
+    <p><tt>#&nbsp;This&nbsp;is&nbsp;supposed&nbsp;to&nbsp;be&nbsp;a&nbsp;gift&nbsp;for&nbsp;Josiah...</tt></p>
+<p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ee77aa">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Classes</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#ee77aa"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><dl>
+<dt><font face="helvetica, arial"><a href="Mezmory.html#Book">Book</a>
+</font></dt><dt><font face="helvetica, arial"><a href="Mezmory.html#Tablet">Tablet</a>
+</font></dt><dt><font face="helvetica, arial"><a href="exceptions.html#Exception">exceptions.Exception</a>(<a href="exceptions.html#BaseException">exceptions.BaseException</a>)
+</font></dt><dd>
+<dl>
+<dt><font face="helvetica, arial"><a href="Mezmory.html#NoWordError">NoWordError</a>
+</font></dt></dl>
+</dd>
+</dl>
+ <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="Book">class <strong>Book</strong></a></font></td></tr>
+    
+<tr bgcolor="#ffc8d8"><td rowspan=2><tt>&nbsp;&nbsp;&nbsp;</tt></td>
+<td colspan=2><tt>The&nbsp;text&nbsp;that&nbsp;a&nbsp;person&nbsp;wishes&nbsp;to&nbsp;memorize.<br>
+&nbsp;<br>
+The&nbsp;text&nbsp;is&nbsp;simply&nbsp;parsed&nbsp;and&nbsp;stored&nbsp;here.<br>&nbsp;</tt></td></tr>
+<tr><td>&nbsp;</td>
+<td width="100%">Methods defined here:<br>
+<dl><dt><a name="Book-__getitem__"><strong>__getitem__</strong></a>(self, index)</dt><dd><tt>Returns&nbsp;the&nbsp;[word,whitespace]&nbsp;pair&nbsp;indexed.</tt></dd></dl>
+
+<dl><dt><a name="Book-__init__"><strong>__init__</strong></a>(self)</dt><dd><tt>Initializes&nbsp;an&nbsp;empty&nbsp;<a href="#Book">Book</a>.<br>
+&nbsp;<br>
+self.<strong>words</strong>&nbsp;=&nbsp;[['This','&nbsp;'],['is','&nbsp;'],['an','&nbsp;'],['example'],['.']]<br>
+&nbsp;<br>
+self.<strong>dictionary</strong>&nbsp;=&nbsp;dictionary&nbsp;of&nbsp;counts&nbsp;of&nbsp;words<br>
+&nbsp;<br>
+self.<strong>maxSearch</strong>&nbsp;=&nbsp;the&nbsp;farthest&nbsp;the&nbsp;search&nbsp;algorithm&nbsp;will&nbsp;look&nbsp;for&nbsp;the&nbsp;word.<br>
+&nbsp;<br>
+self.<strong>freqFact</strong>&nbsp;=&nbsp;how&nbsp;many&nbsp;words&nbsp;past&nbsp;the&nbsp;predicted&nbsp;frequency&nbsp;of&nbsp;the&nbsp;word&nbsp;we&nbsp;are&nbsp;willing&nbsp;to&nbsp;search.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1&nbsp;=&nbsp;exactly&nbsp;at&nbsp;prediction,&nbsp;2&nbsp;=&nbsp;twice&nbsp;the&nbsp;predicted&nbsp;distance,&nbsp;.5&nbsp;=&nbsp;half&nbsp;the&nbsp;distance&nbsp;etc.</tt></dd></dl>
+
+<dl><dt><a name="Book-addToDictionary"><strong>addToDictionary</strong></a>(self, word)</dt><dd><tt>Adds&nbsp;the&nbsp;given&nbsp;word&nbsp;to&nbsp;the&nbsp;stats&nbsp;dictionary</tt></dd></dl>
+
+<dl><dt><a name="Book-isSkippedWord"><strong>isSkippedWord</strong></a>(self, word, checkIndex, targetIndex)</dt><dd><tt>Guesses&nbsp;whether&nbsp;the&nbsp;word&nbsp;is&nbsp;skipped&nbsp;based&nbsp;on&nbsp;word&nbsp;frequency&nbsp;and&nbsp;the&nbsp;current&nbsp;position.<br>
+&nbsp;<br>
+checkIndex&nbsp;=&nbsp;index&nbsp;to&nbsp;check<br>
+targetIndex&nbsp;=&nbsp;index&nbsp;where&nbsp;the&nbsp;students&nbsp;is&nbsp;currently&nbsp;writing.</tt></dd></dl>
+
+<dl><dt><a name="Book-parseFile"><strong>parseFile</strong></a>(self, path<font color="#909090">='James (NIV).txt'</font>)</dt><dd><tt>Breaks&nbsp;the&nbsp;file&nbsp;into&nbsp;a&nbsp;list&nbsp;of&nbsp;word/whitespace&nbsp;pairs.<br>
+&nbsp;<br>
+E.g.&nbsp;[[word,&nbsp;whitespace&nbsp;&amp;/or&nbsp;punctuation],[word,&nbsp;whitespace&nbsp;&amp;/or&nbsp;punctuation]]</tt></dd></dl>
+
+<dl><dt><a name="Book-wordCount"><strong>wordCount</strong></a>(self, word)</dt><dd><tt>Returns&nbsp;the&nbsp;number&nbsp;of&nbsp;times&nbsp;the&nbsp;word&nbsp;appears&nbsp;in&nbsp;the&nbsp;text</tt></dd></dl>
+
+</td></tr></table> <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="NoWordError">class <strong>NoWordError</strong></a>(<a href="exceptions.html#Exception">exceptions.Exception</a>)</font></td></tr>
+    
+<tr bgcolor="#ffc8d8"><td rowspan=2><tt>&nbsp;&nbsp;&nbsp;</tt></td>
+<td colspan=2><tt>Thrown&nbsp;if&nbsp;not&nbsp;given&nbsp;a&nbsp;word&nbsp;when&nbsp;one&nbsp;is&nbsp;expected.<br>
+&nbsp;<br>
+This&nbsp;should&nbsp;never&nbsp;happen.&nbsp;But&nbsp;then&nbsp;bugs&nbsp;are&nbsp;never&nbsp;supposed&nbsp;to&nbsp;happen!<br>&nbsp;</tt></td></tr>
+<tr><td>&nbsp;</td>
+<td width="100%"><dl><dt>Method resolution order:</dt>
+<dd><a href="Mezmory.html#NoWordError">NoWordError</a></dd>
+<dd><a href="exceptions.html#Exception">exceptions.Exception</a></dd>
+<dd><a href="exceptions.html#BaseException">exceptions.BaseException</a></dd>
+<dd><a href="__builtin__.html#object">__builtin__.object</a></dd>
+</dl>
+<hr>
+Methods defined here:<br>
+<dl><dt><a name="NoWordError-__init__"><strong>__init__</strong></a>(self, description<font color="#909090">='An empty string was given as a word or whitespace.'</font>)</dt><dd><tt>Typically&nbsp;this&nbsp;will&nbsp;be&nbsp;called&nbsp;when&nbsp;"An&nbsp;empty&nbsp;string&nbsp;was&nbsp;given&nbsp;as&nbsp;a&nbsp;word&nbsp;or&nbsp;whitespace."</tt></dd></dl>
+
+<dl><dt><a name="NoWordError-__str__"><strong>__str__</strong></a>(self)</dt><dd><tt>Returns&nbsp;the&nbsp;description&nbsp;of&nbsp;why&nbsp;the&nbsp;error&nbsp;was&nbsp;thrown.</tt></dd></dl>
+
+<hr>
+Data descriptors defined here:<br>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><tt>list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+<hr>
+Data and other attributes inherited from <a href="exceptions.html#Exception">exceptions.Exception</a>:<br>
+<dl><dt><strong>__new__</strong> = &lt;built-in method __new__ of type object at 0x1E1CBBE8&gt;<dd><tt>T.<a href="#NoWordError-__new__">__new__</a>(S,&nbsp;...)&nbsp;-&gt;&nbsp;a&nbsp;new&nbsp;object&nbsp;with&nbsp;type&nbsp;S,&nbsp;a&nbsp;subtype&nbsp;of&nbsp;T</tt></dl>
+
+<hr>
+Methods inherited from <a href="exceptions.html#BaseException">exceptions.BaseException</a>:<br>
+<dl><dt><a name="NoWordError-__delattr__"><strong>__delattr__</strong></a>(...)</dt><dd><tt>x.<a href="#NoWordError-__delattr__">__delattr__</a>('name')&nbsp;&lt;==&gt;&nbsp;del&nbsp;x.name</tt></dd></dl>
+
+<dl><dt><a name="NoWordError-__getattribute__"><strong>__getattribute__</strong></a>(...)</dt><dd><tt>x.<a href="#NoWordError-__getattribute__">__getattribute__</a>('name')&nbsp;&lt;==&gt;&nbsp;x.name</tt></dd></dl>
+
+<dl><dt><a name="NoWordError-__getitem__"><strong>__getitem__</strong></a>(...)</dt><dd><tt>x.<a href="#NoWordError-__getitem__">__getitem__</a>(y)&nbsp;&lt;==&gt;&nbsp;x[y]</tt></dd></dl>
+
+<dl><dt><a name="NoWordError-__getslice__"><strong>__getslice__</strong></a>(...)</dt><dd><tt>x.<a href="#NoWordError-__getslice__">__getslice__</a>(i,&nbsp;j)&nbsp;&lt;==&gt;&nbsp;x[i:j]<br>
+&nbsp;<br>
+Use&nbsp;of&nbsp;negative&nbsp;indices&nbsp;is&nbsp;not&nbsp;supported.</tt></dd></dl>
+
+<dl><dt><a name="NoWordError-__reduce__"><strong>__reduce__</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="NoWordError-__repr__"><strong>__repr__</strong></a>(...)</dt><dd><tt>x.<a href="#NoWordError-__repr__">__repr__</a>()&nbsp;&lt;==&gt;&nbsp;repr(x)</tt></dd></dl>
+
+<dl><dt><a name="NoWordError-__setattr__"><strong>__setattr__</strong></a>(...)</dt><dd><tt>x.<a href="#NoWordError-__setattr__">__setattr__</a>('name',&nbsp;value)&nbsp;&lt;==&gt;&nbsp;x.name&nbsp;=&nbsp;value</tt></dd></dl>
+
+<dl><dt><a name="NoWordError-__setstate__"><strong>__setstate__</strong></a>(...)</dt></dl>
+
+<hr>
+Data descriptors inherited from <a href="exceptions.html#BaseException">exceptions.BaseException</a>:<br>
+<dl><dt><strong>__dict__</strong></dt>
+</dl>
+<dl><dt><strong>args</strong></dt>
+</dl>
+<dl><dt><strong>message</strong></dt>
+<dd><tt>exception&nbsp;message</tt></dd>
+</dl>
+</td></tr></table> <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="Tablet">class <strong>Tablet</strong></a></font></td></tr>
+    
+<tr bgcolor="#ffc8d8"><td rowspan=2><tt>&nbsp;&nbsp;&nbsp;</tt></td>
+<td colspan=2><tt>This&nbsp;is&nbsp;the&nbsp;place&nbsp;the&nbsp;student&nbsp;"writes"&nbsp;the&nbsp;text&nbsp;from&nbsp;memory.<br>
+&nbsp;<br>
+Only&nbsp;the&nbsp;correct&nbsp;(or&nbsp;almost&nbsp;correct)&nbsp;words&nbsp;are&nbsp;saved&nbsp;though.<br>
+Actually,&nbsp;only&nbsp;the&nbsp;score&nbsp;for&nbsp;each&nbsp;word&nbsp;and&nbsp;the&nbsp;stuent's&nbsp;position&nbsp;are&nbsp;saved,<br>
+though&nbsp;it&nbsp;will&nbsp;feel&nbsp;to&nbsp;the&nbsp;student&nbsp;as&nbsp;if&nbsp;he&nbsp;is&nbsp;typing&nbsp;it,&nbsp;only&nbsp;the&nbsp;correct&nbsp;text&nbsp;will&nbsp;appear,<br>
+as&nbsp;saved&nbsp;in&nbsp;the&nbsp;<a href="#Book">Book</a>.<br>&nbsp;</tt></td></tr>
+<tr><td>&nbsp;</td>
+<td width="100%">Methods defined here:<br>
+<dl><dt><a name="Tablet-__getitem__"><strong>__getitem__</strong></a>(self, index)</dt><dd><tt>Returns&nbsp;the&nbsp;scores&nbsp;of&nbsp;the&nbsp;word&nbsp;(not&nbsp;whitespace)&nbsp;indexed.<br>
+&nbsp;<br>
+Accessed&nbsp;as&nbsp;if&nbsp;the&nbsp;tablet&nbsp;itself&nbsp;were&nbsp;an&nbsp;array:&nbsp;tablet[index]</tt></dd></dl>
+
+<dl><dt><a name="Tablet-__init__"><strong>__init__</strong></a>(self, theBook)</dt><dd><tt>Sets&nbsp;up&nbsp;an&nbsp;empty&nbsp;test&nbsp;array&nbsp;the&nbsp;same&nbsp;size&nbsp;as&nbsp;the&nbsp;book&nbsp;it&nbsp;is&nbsp;to&nbsp;wrap.</tt></dd></dl>
+
+<dl><dt><a name="Tablet-deleteWord"><strong>deleteWord</strong></a>(self)</dt><dd><tt>Removes&nbsp;the&nbsp;score&nbsp;of&nbsp;the&nbsp;last&nbsp;given&nbsp;word,&nbsp;and&nbsp;whitespace.<br>
+&nbsp;<br>
+Will&nbsp;end&nbsp;with&nbsp;the&nbsp;previously&nbsp;typed&nbsp;word&nbsp;with&nbsp;whitespace.</tt></dd></dl>
+
+<dl><dt><a name="Tablet-findWord"><strong>findWord</strong></a>(self, studentsWord, index)</dt><dd><tt>Attempts&nbsp;to&nbsp;find&nbsp;the&nbsp;given&nbsp;word&nbsp;near&nbsp;to&nbsp;the&nbsp;given&nbsp;index.<br>
+&nbsp;<br>
+Won't&nbsp;return&nbsp;words&nbsp;that&nbsp;have&nbsp;already&nbsp;been&nbsp;written,&nbsp;which&nbsp;is&nbsp;why&nbsp;it&nbsp;is&nbsp;in&nbsp;the&nbsp;<a href="#Tablet">Tablet</a>&nbsp;class.<br>
+&nbsp;<br>
+Returns:&nbsp;The&nbsp;index&nbsp;of&nbsp;the&nbsp;first&nbsp;word&nbsp;found,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;searching&nbsp;first&nbsp;at&nbsp;the&nbsp;index&nbsp;given,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;then&nbsp;leading&nbsp;towards&nbsp;the&nbsp;index&nbsp;from&nbsp;the&nbsp;back,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;finally&nbsp;searhing&nbsp;ahead&nbsp;of&nbsp;the&nbsp;index<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;If&nbsp;the&nbsp;word&nbsp;is&nbsp;not&nbsp;found,&nbsp;returns&nbsp;None</tt></dd></dl>
+
+<dl><dt><a name="Tablet-getScore"><strong>getScore</strong></a>(self, index<font color="#909090">=None</font>, isWord<font color="#909090">=None</font>)</dt><dd><tt>Returns&nbsp;the&nbsp;indexed&nbsp;word.<br>
+&nbsp;<br>
+If&nbsp;no&nbsp;index&nbsp;is&nbsp;given,&nbsp;returns&nbsp;the&nbsp;score&nbsp;of&nbsp;the&nbsp;most&nbsp;recently&nbsp;entered&nbsp;word.</tt></dd></dl>
+
+<dl><dt><a name="Tablet-getWord"><strong>getWord</strong></a>(self, index<font color="#909090">=None</font>, isWord<font color="#909090">=None</font>)</dt><dd><tt>Returns&nbsp;the&nbsp;indexed&nbsp;word&nbsp;or&nbsp;whitespace<br>
+&nbsp;<br>
+If&nbsp;no&nbsp;index&nbsp;is&nbsp;given,&nbsp;returns&nbsp;the&nbsp;most&nbsp;recent&nbsp;word.</tt></dd></dl>
+
+<dl><dt><a name="Tablet-isWritten"><strong>isWritten</strong></a>(self, index)</dt><dd><tt>Indicates&nbsp;if&nbsp;the&nbsp;students&nbsp;has&nbsp;already&nbsp;written&nbsp;the&nbsp;word.</tt></dd></dl>
+
+<dl><dt><a name="Tablet-setScore"><strong>setScore</strong></a>(self, index<font color="#909090">=None</font>, isWord<font color="#909090">=None</font>, score<font color="#909090">=None</font>)</dt><dd><tt>Sets&nbsp;the&nbsp;score,&nbsp;if&nbsp;not&nbsp;yet&nbsp;set.<br>
+&nbsp;<br>
+WARNING:&nbsp;Untested&nbsp;method!!!&nbsp;Need&nbsp;to&nbsp;add&nbsp;to&nbsp;the&nbsp;tests.</tt></dd></dl>
+
+<dl><dt><a name="Tablet-writeHint"><strong>writeHint</strong></a>(self)</dt><dd><tt>Writes&nbsp;the&nbsp;next&nbsp;word&nbsp;automatically,&nbsp;with&nbsp;no&nbsp;user&nbsp;input.<br>
+&nbsp;<br>
+Should&nbsp;be&nbsp;used&nbsp;after&nbsp;writeHintSpace,&nbsp;to&nbsp;ensure&nbsp;the&nbsp;previous&nbsp;space&nbsp;has&nbsp;been&nbsp;hinted&nbsp;if&nbsp;necessary.</tt></dd></dl>
+
+<dl><dt><a name="Tablet-writeHintSpace"><strong>writeHintSpace</strong></a>(self)</dt><dd><tt>Writes&nbsp;the&nbsp;next&nbsp;space&nbsp;to&nbsp;the&nbsp;tablet,&nbsp;if&nbsp;necessary.<br>
+&nbsp;<br>
+Returns&nbsp;True&nbsp;if&nbsp;there&nbsp;was&nbsp;a&nbsp;space&nbsp;that&nbsp;needed&nbsp;to&nbsp;be&nbsp;hinted</tt></dd></dl>
+
+<dl><dt><a name="Tablet-writeWord"><strong>writeWord</strong></a>(self, studentsWord)</dt><dd><tt>The&nbsp;student&nbsp;attemtps&nbsp;to&nbsp;write&nbsp;the&nbsp;next&nbsp;word.<br>
+&nbsp;<br>
+Returns&nbsp;the&nbsp;change&nbsp;in&nbsp;index.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;If&nbsp;the&nbsp;user&nbsp;is&nbsp;remembering&nbsp;correctly&nbsp;this&nbsp;should&nbsp;be&nbsp;1<br>
+&nbsp;&nbsp;&nbsp;&nbsp;If&nbsp;the&nbsp;user&nbsp;has&nbsp;typed&nbsp;a&nbsp;completely&nbsp;incorrect&nbsp;word&nbsp;it&nbsp;will&nbsp;be&nbsp;0<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(as&nbsp;the&nbsp;index&nbsp;will&nbsp;remaind&nbsp;where&nbsp;it&nbsp;was&nbsp;before)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Otherwise&nbsp;a&nbsp;posive&nbsp;index&nbsp;indicates&nbsp;the&nbsp;number&nbsp;of&nbsp;words&nbsp;skipped&nbsp;forward<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;and&nbsp;negative&nbsp;the&nbsp;number&nbsp;backwards.</tt></dd></dl>
+
+</td></tr></table></td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#eeaa77">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Functions</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#eeaa77"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><dl><dt><a name="-isWord"><strong>isWord</strong></a>(character)</dt><dd><tt>Checks&nbsp;whether&nbsp;the&nbsp;given&nbsp;character&nbsp;is&nbsp;a&nbsp;word&nbsp;or&nbsp;whitespace.<br>
+&nbsp;<br>
+If&nbsp;a&nbsp;word&nbsp;is&nbsp;given,&nbsp;the&nbsp;first&nbsp;character&nbsp;is&nbsp;used.<br>
+&nbsp;<br>
+Throughout&nbsp;this&nbsp;document&nbsp;I've&nbsp;used&nbsp;the&nbsp;term&nbsp;"whitespace"&nbsp;far&nbsp;too&nbsp;liberally.<br>
+When&nbsp;I&nbsp;say&nbsp;"whitespace"&nbsp;I&nbsp;mean&nbsp;anything&nbsp;that&nbsp;is&nbsp;not&nbsp;a&nbsp;word,<br>
+including&nbsp;numbers&nbsp;and&nbsp;punctuation&nbsp;as&nbsp;well&nbsp;as&nbsp;whitespace.</tt></dd></dl>
+ <dl><dt><a name="-sameWord"><strong>sameWord</strong></a>(word1, word2)</dt><dd><tt>Checks&nbsp;whether&nbsp;the&nbsp;two&nbsp;words&nbsp;are&nbsp;the&nbsp;same.<br>
+&nbsp;<br>
+In&nbsp;the&nbsp;future&nbsp;may&nbsp;allow&nbsp;mispelling&nbsp;to&nbsp;some&nbsp;extent.</tt></dd></dl>
+</td></tr></table>
+</body></html>

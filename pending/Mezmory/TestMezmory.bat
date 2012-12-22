@@ -1,0 +1,1 @@
+C:\Python25\Python.exe -i Main.py

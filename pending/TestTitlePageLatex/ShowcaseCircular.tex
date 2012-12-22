@@ -1,0 +1,68 @@
+%&pdftex
+% The file borrows from an example called "circle"
+% by Blue Sky Research, distributed with their TeX
+% typesetting program for Macintosh called Textures.
+% Adapted on 2003.03.15 by Dariusz Wilczynski
+% mailto:Dariusz.Wilczynski@usu.edu
+% for the TeX Showcase
+\pretolerance=10\tolerance=9999\tracingstats=2
+\hbadness=2000
+\doublehyphendemerits=1000000
+\finalhyphendemerits=1000000
+\hyphenpenalty=10
+
+\nopagenumbers \dimen0=2.9in \parindent0pt
+\parshape32
+  0.75\dimen0   0.50\dimen0
+  0.58\dimen0   0.85\dimen0
+  0.46\dimen0   1.07\dimen0
+  0.38\dimen0   1.25\dimen0
+  0.30\dimen0   1.39\dimen0
+  0.25\dimen0   1.51\dimen0
+  0.20\dimen0   1.61\dimen0
+  0.15\dimen0   1.69\dimen0
+  0.12\dimen0   1.77\dimen0
+  0.09\dimen0   1.83\dimen0
+  0.06\dimen0   1.88\dimen0
+  0.04\dimen0   1.92\dimen0
+  0.02\dimen0   1.95\dimen0
+  0.01\dimen0   1.98\dimen0
+  0.00\dimen0   1.99\dimen0
+  0.00\dimen0   2.00\dimen0
+  0.00\dimen0   2.00\dimen0
+  0.00\dimen0   1.99\dimen0
+  0.01\dimen0   1.98\dimen0
+  0.02\dimen0   1.95\dimen0
+  0.04\dimen0   1.92\dimen0
+  0.06\dimen0   1.88\dimen0
+  0.09\dimen0   1.83\dimen0
+  0.12\dimen0   1.77\dimen0
+  0.15\dimen0   1.69\dimen0
+  0.20\dimen0   1.61\dimen0
+  0.25\dimen0   1.51\dimen0
+  0.30\dimen0   1.39\dimen0
+  0.38\dimen0   1.25\dimen0
+  0.46\dimen0   1.07\dimen0
+  0.58\dimen0   0.85\dimen0
+  0.785\dimen0   0.43\dimen0
+\baselineskip=12.5pt
+\parfillskip=0pt
+\looseness=2
+{\bf The \TeX\ Showcase.}
+Let us quote from {\bf Gerben Wierda's} web page
+({\tt http://www.rna.nl/tex.html}) titled
+{\bf TeX on Mac~OS~X}.
+To use TeX you need basically 4 things:
+1.~An editor to edit ASCII text. 
+2.~The TeX Programs for your platform (binaries and scripts). 
+3.~A TeX foundation collection (macro's, formats, fonts, etc.). 
+4.~A way to view the result.
+%
+TeX normally produces device independent DVI from the ASCII TeX source. 
+To view or print DVI, the device independent data needs to be translated to a device. For instance an X11 or Windows user interface, or a PostScript or Laserjet printer. Sometimes, the users have to produce a printer format first (like PostScript), which then again is rendered on the screen by a PostScript viewer (like GhostView).
+Recently, however, there has been a new TeX development: direct production of (possibly partly device-dependent) PDF from TeX sources. This is called pdfTeX.
+Mac OS X has a Unix core and it is therefore possible to use a Unix TeX distribution on Mac OS X. The source for TeX is TeX Live, the central TeX development system for Unix and other platforms (like Windows), which is published on CD once in a while. TeX Live is huge, programs (for a few platforms) and the foundation (macro's, fonts, etc.) together add up to 1 full CD (and maybe in the future even 2). The chief coordinator (there are quite a few maintainers of the various parts) of TeX Live is Sebastian Rahtz. A second very popular TeX (for Unix only) is teTeX, which has been created and is maintained by Thomas Esser. A big advantage of teTeX is that it comes with a well chosen foundation: teTeX-texmf.
+Apart from TeX (and GhostScript), the engine, you need a way to create the TeX source and view the output. If you are into basics and lack of comfort, you can use the existing TextEdit.app to edit your files, use the command line to run pdfTeX, and view the result with Preview.app or Acrobat. If you are less masochistically inclined, there are several frontends available that handle the edit-typeset-view phases for you. Some of them rely on the availability of a distribution like mine to do the work behind the scenes, other may be richer and pack their own TeX distribution.
+Here are a few frontends:
+1.~TeXShop, 2.~iTeXMac, 3.~OzTeX, 4.~TeX Tools, 5.~Mac-Emacs, 6.~BibDesk.
+\vfill\end

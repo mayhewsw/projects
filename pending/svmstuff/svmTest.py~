@@ -1,0 +1,10 @@
+	
+
+
+from libsvm import *
+prob = svm_problem([1,-1],[[1,0,1],[-1,0,-1]])
+param = svm_parameter(kernel_type = LINEAR, C = 10)
+## training  the model
+m = svm_model(prob, param)
+#testing the model
+m.predict([1, 1, 1])

@@ -1,0 +1,259 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+<HEAD>
+	<META HTTP-EQUIV="CONTENT-TYPE" CONTENT="text/html; charset=windows-1252">
+	<TITLE></TITLE>
+	<META NAME="GENERATOR" CONTENT="OpenOffice.org 2.3  (Win32)">
+	<META NAME="AUTHOR" CONTENT="Zachariah Yoder">
+	<META NAME="CREATED" CONTENT="20090711;16440468">
+	<META NAME="CHANGEDBY" CONTENT="Zachariah Yoder">
+	<META NAME="CHANGED" CONTENT="20090711;17574242">
+	<STYLE TYPE="text/css">
+	<!--
+		@page { size: 8.27in 11.69in; margin: 0.79in }
+		P { margin-bottom: 0.08in }
+		H1 { margin-bottom: 0.08in }
+		H1.western { font-family: "Arial", sans-serif; font-size: 16pt }
+		H1.cjk { font-family: "MS P????"; font-size: 16pt }
+		H1.ctl { font-family: "Tahoma"; font-size: 16pt }
+		H2 { margin-bottom: 0.08in }
+		H2.western { font-family: "Arial", sans-serif; font-size: 14pt; font-style: italic }
+		H2.cjk { font-family: "MS P????"; font-size: 14pt; font-style: italic }
+		H2.ctl { font-size: 14pt; font-style: italic }
+		H3 { margin-bottom: 0.08in }
+		H3.western { font-family: "Arial", sans-serif }
+		H3.cjk { font-family: "MS P????" }
+	-->
+	</STYLE>
+</HEAD>
+<BODY LANG="en-US" DIR="LTR">
+<P STYLE="margin-bottom: 0in">Since there is so little documentation,
+I am including all three parts in this one text file:</P>
+<P STYLE="margin-bottom: 0in">1) <A HREF="#Mezmory">What is Mezmory?</A></P>
+<P STYLE="margin-bottom: 0in">2) <A HREF="#Users guide">User's guide</A></P>
+<P STYLE="margin-bottom: 0in">3) <A HREF="#Programmer's guide">Programmer's
+guide</A></P>
+<P STYLE="margin-bottom: 0in"><BR>
+</P>
+<H1 CLASS="western"><A NAME="Mezmory"></A>1. Mezmory 0.9</H1>
+<P STYLE="margin-bottom: 0in">Mezmory helps you to mezmorize long
+passages of any kind... memorize them I mean!  The program will help
+you to see which parts you forget (or mispell).  Don't focus on how
+good your memory is (or isn't!) focus on the meaning of the passage. 
+ 
+</P>
+<P STYLE="margin-bottom: 0in"><BR>
+</P>
+<H1 CLASS="western"><A NAME="Users guide"></A>2. User's guide</H1>
+<H2 CLASS="western">Installation</H2>
+<P>You need to install python from their website...
+<A HREF="http://www.python.org/download">www.python.org/download</A>.
+</P>
+<P>Once you have installed Python all you have to do is double-click
+MezmoryBoard.py to run my program... more details on that are below.</P>
+<H2 CLASS="western">The basics</H2>
+<P>Mezmory should be simple to use:</P>
+<OL>
+	<LI><P>Use any program you like to save the text you want to
+	memorize as a plain text file (*.txt)</P>
+	<OL>
+		<P>(Put the file in the same directory as MezmoryBoard.py)</P>
+	</OL>
+	<LI><P>Double-click MezmoryBoard.py to start up Mezmory.</P>
+	<LI><P>A file dialog will appear. Type the name of your text file
+	(complete with the *.txt) and your file will open.  
+	</P>
+	<OL>
+		<P>Note: If Mezmory can't find your file it will open a small
+		sample from James (&ldquo;James (NIV).txt&rdquo;) so you can see
+		how it works. (You'll have to use the hint if you haven't memorized
+		James.)</P>
+	</OL>
+	<LI><P>Try to type the passage that is in the file. 
+	</P>
+</OL>
+<UL>
+	<LI><P>If you type it correclty it will simply appear in black</P>
+	<LI><P>If you skip a word (that is you type a word that is a little
+	bit ahead), the words you skip will appear grey</P>
+	<LI><P>If you type a word that is grey, as long as it isn't too far
+	back, then the word will turn blue and you can keep typing from
+	there. (You can also keep typing form where you were, and it will
+	jump back ahead again.)</P>
+	<LI><P>If you need a hint, press &ldquo;tab&rdquo;  - it will appear
+	green</P>
+	<LI><P>If you type a word that is wrong (or too far away), the word
+	will simply dissappear. Thus what you see is always the correct
+	text, without any mistakes in it.  (It may colored a little funny,
+	but it is exactly what you saved in your plain text file).</P>
+</UL>
+<OL START=5>
+	<LI><P STYLE="margin-bottom: 0in">If you want to move forward or
+	backwards a lot:</P>
+</OL>
+<UL>
+	<LI><P STYLE="margin-bottom: 0in">Tab = Forward one word (a hint)</P>
+	<LI><P STYLE="margin-bottom: 0in">Control-F = Forward a lot of words
+	at once (say for example you want to go to chapter three... use
+	this)</P>
+	<LI><P STYLE="margin-bottom: 0in">Shift-Delete =  Backwards a lot of
+	words at once (say for example you want to back up and try the last
+	paragraph you just did because you made a lot of mistakes... a good
+	way to learn)</P>
+	<LI><P STYLE="margin-bottom: 0in">Control-Delete = Backwards only
+	one word at a time. 
+	</P>
+	<P STYLE="margin-bottom: 0in">Note: Currently selecting and deleting
+	text doesn't really do anything. The moment you start typing it will
+	just go back wherever you were before.</P>
+	<P STYLE="margin-bottom: 0in">Also Note: if you click back in the
+	text somewhere the cursor will move, but it won't actually let you
+	start typing there. It doesn't even know you clicked there and will
+	continue as if you are still wherever you were typing last. Sorry.</P>
+</UL>
+<H2 CLASS="western">Some tips on how to use the program for
+memorization</H2>
+<P>First of all, as I have alreay said, focus on the meanign of the
+text. This is not all about your ability to remember the text word
+for word. Yes, the program will help you to do that, but that isn't
+what its about. It is about internalizing the text.</P>
+<P>I typically don't use Mezmory until I have already mostly
+memorized a text.  So far I've only been using it on texts that I
+(partially) memorized a long time ago and have forgotten bits and
+pieces of.  
+</P>
+<P>What I've done (and it has worked for me), is I say a phrase at a
+time out loud, and then write it. It is amazing how much more
+accurate it is when I've said the phrase aloud than if I just look
+and type. Of course it also helps me to think about what it means!</P>
+<P>If  I can't spell a word, or for any other reason a word won't
+appear, I just type the next word and keep on going.  
+</P>
+<P>If I miss a whole phrase, I'll usually type it (remember, you
+don't have to delete to type recently missed words, just type the
+first word (or two) and you'll immediately go back to the beginning
+of the phrase.</P>
+<P>If all else fails I use the &ldquo;hint&rdquo;. Its not bad to use
+the hint. 
+</P>
+<P>At the end of a paragraph if it looks really colorful (a lot of
+grey and green, and maybe even if there is a lot of blue), then I
+read the whole paragraph aloud, noting especially the words that I
+missed.  I ponder the difference between what I said and what is
+actually there so that I will remember the words next time. Sometimes
+I just say the bits that I missed five or six times aloud until it
+flows off my tongue (of course, as always thinking about what it
+means!).</P>
+<H3 CLASS="western">Example of a subtle difference in meaning:</H3>
+<P STYLE="margin-bottom: 0in">Here's a subtle difference in
+meaning...</P>
+<P STYLE="margin-bottom: 0in"><BR>
+</P>
+<P STYLE="margin-bottom: 0in">The actual text:</P>
+<P STYLE="margin-bottom: 0in">Eph 3:18 &ldquo;...may have power,
+together with all the saints, to grasp how wide and long and high and
+deep is the love of Christ, <SUP>19</SUP>and to know this love that
+surpasses knowledge - that you may be filled to the measure of all
+the fullness of God.&rdquo;</P>
+<P STYLE="margin-bottom: 0in"><BR>
+</P>
+<P STYLE="margin-bottom: 0in">What I tried to write:</P>
+<P STYLE="margin-bottom: 0in">&ldquo;...may have power, together with
+all the saints, to grasp how wide and long and high and deep is the
+love of Christ, <SUP>19</SUP>and <B>that you may </B><SPAN STYLE="font-weight: medium">know
+this love...</SPAN></P>
+<P STYLE="margin-bottom: 0in"><BR>
+</P>
+<P STYLE="margin-bottom: 0in"><SPAN STYLE="font-weight: medium">Of
+course, the program never lets wrong words appear, so &ldquo;that you
+may&rdquo; dissappeared as I wrote them and the word &ldquo;to&rdquo;
+was skipped (appearing gray).  When I thougth about the difference I
+realized that Paul was not just praying that they may know the love,
+but that they would have the power to know the love.  Christ's love
+is so huge that it is by no means easy to know!</SPAN></P>
+<H2 CLASS="western">Some details about skipping forward and backward
+by typing</H2>
+<P>Usually if you want to jump back to a word you just type it.  You
+can even skip a whole phrase if you forget it and jump forward by
+typing whatever comes after the phrase. However, in order to keep
+Mezmory from jumping all over like crazy, it won't jump more than 20
+words at a time. (This is a single variable in the code that can be
+changed if you are so inclined).</P>
+<P>Not only that, Mezmory looks at the whole passage and sees which
+words are the most common like &ldquo;the&rdquo; and &ldquo;and&rdquo;.
+ For these common words you have to be really close to jump to them. 
+So, if you've skipped the phrase &ldquo;and find out what pleases the
+Lord&rdquo;, you may not be able to jump back to the &ldquo;and&rdquo;
+by typing it, but if you type &ldquo;find&rdquo; it will jump back to
+the beginning of the phrase.  It works the same way skipping
+forwards. If you forget a word or two, it won't jump as far for words
+like &ldquo;and&rdquo; and &ldquo;the&rdquo;. 
+</P>
+<P>Note: If you have a very short passage it may not be possible to
+skip words unless you go and change some numbers in the code.</P>
+<H1 CLASS="western"><A NAME="Programmer's guide"></A>3. Programmers
+guide</H1>
+<P STYLE="margin-bottom: 0in"><BR>
+</P>
+<P STYLE="margin-bottom: 0in">For an introduction to Python, the
+tutorial that comes with Python (in the help) is very helpful.</P>
+<P STYLE="margin-bottom: 0in"><BR>
+</P>
+<P STYLE="margin-bottom: 0in"><IMG SRC="MezmoryAtAGlance.png" NAME="graphics1" ALIGN=LEFT WIDTH=642 HEIGHT=454 BORDER=0><BR CLEAR=LEFT><BR>
+</P>
+<P STYLE="margin-bottom: 0in">The documentation pages linked below
+are generated by running <A HREF="./pydoc%20Mezmory.bat">pydoc
+Mezmory.bat</A></P>
+<P STYLE="margin-bottom: 0in"><BR>
+</P>
+<P STYLE="margin-bottom: 0in">For an overview of the code:</P>
+<P STYLE="margin-bottom: 0in">	<A HREF="./Mezmory.html">Mezmory.py</A></P>
+<P STYLE="margin-bottom: 0in">		Includes two classes:</P>
+<P STYLE="margin-bottom: 0in">			* Book - basically a list of pairs
+of words and the whitespace between them</P>
+<P STYLE="margin-bottom: 0in">			* Tablet - bascially a list of
+scores on how well the user is doing, and where the user is at the
+moment.  
+</P>
+<P STYLE="margin-bottom: 0in"><BR>
+</P>
+<P STYLE="margin-bottom: 0in">	<A HREF="./TestMezmory.html">TestMezmory.py</A>
+- A file to test the Mezmory.py code</P>
+<P STYLE="margin-bottom: 0in">		Anytime I add a feature to Mezmory, I
+add a test here. That way if I ever break something, I'll immediately
+know it. Unfortunately, although this file starts MezmoryBoard for
+me, I can't actually use it to test MezmoryBoard! (Well, it would be
+possible, but I prefer just to test the GUI myself anyway.)</P>
+<P STYLE="margin-bottom: 0in"><BR>
+</P>
+<P STYLE="margin-bottom: 0in">	<A HREF="./MezmoryBoard.html">MezmoryBoard.py</A></P>
+<P STYLE="margin-bottom: 0in">		Includes a few classes:</P>
+<P STYLE="margin-bottom: 0in">			* MezmoryBoard - The main GUI for
+Mezmory. Based on Tk. 
+</P>
+<P STYLE="margin-bottom: 0in"><BR>
+</P>
+<P STYLE="margin-bottom: 0in">	See a separate PDF of tutorial and
+good reference for Tk (<A HREF="./an-introduction-to-tkinter.pdf">an-introduction-to-tkinter.pdf</A>).</P>
+<P STYLE="margin-bottom: 0in"><BR>
+</P>
+<P STYLE="margin-bottom: 0in">			* Dialog - comes straight,
+unmodified from the Tk tutorial</P>
+<P STYLE="margin-bottom: 0in">			* FileDialog - really basic
+inherited class of &quot;Dialog&quot;</P>
+<H2 CLASS="western">Working together</H2>
+<P>I'll note that I've been using TortoiseSVN to keep track of when
+I've made what changes to the documents.  We could probably manage a
+simple combination of e-mail and local Tortoise SVN if we both want
+to keep tweaking the code. (TortoiseSVN is great for developing,
+especially when shared by multiple people! Easy to use too. Perhaps
+Josiah will help me to set up an SVN server if he thinks it is worth
+it.)<BR><BR><BR>
+</P>
+<P STYLE="margin-bottom: 0in"><BR>
+</P>
+<P STYLE="margin-bottom: 0in"><BR>
+</P>
+<H2 CLASS="western"></H2>
+</BODY>
+</HTML>

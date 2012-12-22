@@ -1,0 +1,6 @@
+Probabilistic approach.
+
+Just keep track of every card seen so far. Find the expected value of an unseen card, adjust
+it each time a new card is shown. Be sure to reset when deck is flipped. 
+
+Expected value of unseen cards should just be arithmetic average.

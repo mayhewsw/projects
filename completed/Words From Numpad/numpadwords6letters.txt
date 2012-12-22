@@ -1,0 +1,2721 @@
+
+266322
+amoeba confab 
+
+746242
+phobia phobic 
+
+263642
+anemia anemic 
+
+437642
+hernia heroic 
+
+696742
+myopia myopic 
+
+737842
+peptic septic 
+
+333223
+deface efface 
+
+668423
+notice novice 
+
+733823
+reduce seduce 
+
+322233
+dabbed facade 
+
+542233
+jibbed libbed 
+
+262233
+bobbed cobbed 
+
+562233
+jobbed lobbed 
+
+762233
+robbed sobbed 
+
+272233
+arcade braced 
+
+782233
+pubbed rubbed subbed 
+
+774233
+priced spiced 
+
+526233
+jambed lambed lanced 
+
+946233
+winced zinced 
+
+266233
+bombed boobed combed 
+
+866233
+tombed unmade 
+
+227233
+abrade barbed carafe 
+
+847233
+tirade visaed 
+
+468233
+hotbed invade 
+
+532333
+leaded leafed 
+
+732333
+recede secede 
+
+562333
+loaded loafed 
+
+423333
+gadded gaffed 
+
+233333
+bedded beefed 
+
+733333
+reefed reffed seeded 
+
+933333
+wedded weeded 
+
+543333
+kidded lidded 
+
+743333
+ridded riffed 
+
+263333
+codded coffee 
+
+763333
+podded sodded 
+
+283333
+budded buffed cuffed 
+
+783333
+puffed ruffed 
+
+226333
+aboded banded 
+
+836333
+tended vended 
+
+466333
+goofed hooded hoofed 
+
+966333
+wooded woofed 
+
+227333
+barfed carded 
+
+247333
+agreed birded 
+
+467333
+horded impede 
+
+787333
+pureed surfed 
+
+222433
+babied cached 
+
+462433
+imaged inched 
+
+782433
+rubied staged 
+
+333433
+defied eddied 
+
+424433
+gagged hagged 
+
+524433
+jagged lagged 
+
+724433
+ragged sagged 
+
+534433
+kegged legged 
+
+744433
+pigged rigged sighed 
+
+264433
+bogged bogied 
+
+364433
+dogged fogged 
+
+564433
+jogged logged 
+
+584433
+jugged lugged 
+
+235433
+belied belief 
+
+735433
+relied relief 
+
+426433
+ganged hanged 
+
+726433
+panged ranged 
+
+746433
+pinged ringed singed 
+
+946433
+winged zinged 
+
+466433
+gonged honied 
+
+227433
+barged bashed cashed 
+
+427433
+gashed hashed 
+
+827433
+tariff varied 
+
+637433
+merged meshed 
+
+347433
+dished fished 
+
+467433
+gorged inside 
+
+287433
+buried bushed busied 
+
+487433
+gushed hushed 
+
+787433
+purged pushed rushed stride strife surged 
+
+222533
+backed cabled 
+
+422533
+gabled hacked 
+
+522533
+jacked lacked 
+
+722533
+packed racked sabled sacked scaled 
+
+822533
+tabled tacked 
+
+632533
+mealed necked 
+
+732533
+peaked pealed pecked sealed 
+
+542533
+kicked licked 
+
+742533
+picked ricked sicked 
+
+942533
+whaled wicked 
+
+262533
+ambled coaled cocked 
+
+362533
+docked foaled 
+
+462533
+goaled hocked 
+
+562533
+jocked locked 
+
+762533
+pocked rocked snaked soaked socked 
+
+272533
+arcked braked 
+
+382533
+ducked fucked 
+
+782533
+pucked quaked staked staled sucked 
+
+292533
+awaked cycled 
+
+733533
+peeked peeled reeked reeled 
+
+743533
+rifled sidled 
+
+383533
+dueled fueled 
+
+624533
+mailed nailed 
+
+724533
+railed sailed 
+
+264533
+angled boiled coiled 
+
+764533
+roiled smiled soiled 
+
+225533
+balked balled calked called 
+
+925533
+walked walled yakked 
+
+235533
+belled celled 
+
+435533
+gelled helled 
+
+935533
+welled yelled 
+
+245533
+bilked billed 
+
+345533
+dilled filled 
+
+645533
+milked milled nilled 
+
+265533
+ankled bolled 
+
+765533
+polled rolled 
+
+285533
+bulked bulled culled 
+
+385533
+dulled fulled 
+
+485533
+gulled hulled 
+
+785533
+pulled sulked 
+
+546533
+kinked linked 
+
+746533
+pinked rinked 
+
+266533
+booked conked cooked cooled 
+
+466533
+honked hooked 
+
+566533
+kooked looked 
+
+766533
+pooled rooked smoked 
+
+386533
+dunked evoked funked 
+
+227533
+barked basked 
+
+627533
+marked masked narked 
+
+487533
+hurled husked 
+
+429533
+gawked hawked 
+
+232633
+beamed beaned 
+
+332633
+deaned decode 
+
+732633
+reamed seamed 
+
+362633
+encode foamed 
+
+324633
+echoed fained 
+
+724633
+pained rained 
+
+744633
+shined signed 
+
+226633
+banned canned canoed 
+
+326633
+dammed damned fanned 
+
+526633
+jammed lammed 
+
+726633
+panned rammed 
+
+826633
+tanned vanned 
+
+346633
+dimmed dinned 
+
+746633
+phoned pinned rimmed shooed sinned 
+
+256633
+blonde cloned 
+
+266633
+boomed conned 
+
+366633
+donned doomed 
+
+666633
+mooned nooned 
+
+286633
+atoned bummed 
+
+486633
+gummed gunned hummed 
+
+786633
+punned runoff stoned summed sunned 
+
+327633
+darned earned farmed 
+
+927633
+warmed warned 
+
+837633
+termed terned 
+
+667633
+morned normed 
+
+778633
+pruned spumed 
+
+288633
+autoed cutoff 
+
+329633
+dawned fawned 
+
+729633
+pawned payoff 
+
+722733
+sacred scared 
+
+332733
+decree feared 
+
+432733
+geared heaped 
+
+532733
+leaped leased 
+
+732733
+reaped reared seared 
+
+832733
+teared teased 
+
+242733
+biased chased 
+
+742733
+phased shaped shared 
+
+762733
+roared snared soaped soared 
+
+372733
+draped erased 
+
+533733
+jeered leered 
+
+733733
+peeped peered seeped 
+
+833733
+teepee veered 
+
+724733
+paired raised 
+
+764733
+poised sniped 
+
+785733
+pulped pulsed 
+
+726733
+scoped scored 
+
+826733
+tamped vamped 
+
+836733
+temped tensed 
+
+746733
+pimped rinsed shored 
+
+466733
+goosed hooped 
+
+566733
+looped loosed 
+
+766733
+pooped romped snored 
+
+586733
+jumped lumped 
+
+786733
+pumped rumped stored 
+
+227733
+barred capped carped 
+
+427733
+gasped gassed harped 
+
+527733
+jarred lapped lapsed 
+
+627733
+mapped marred massed napped 
+
+727733
+papped parred parsed passed rapped rasped sapped sassed 
+
+827733
+tapped tarred 
+
+927733
+warped warred yapped zapped 
+
+347733
+dipped dissed 
+
+447733
+hipped hissed 
+
+547733
+kissed lisped 
+
+647733
+missed nipped 
+
+747733
+pipped pissed ripped sipped sirred 
+
+947733
+yipped yippee zipped 
+
+267733
+bopped bossed copped copsed 
+
+467733
+hopped horsed 
+
+667733
+mopped mossed 
+
+767733
+popped sopped 
+
+867733
+topped tossed 
+
+287733
+burped burred bussed cupped curred cursed cussed 
+
+387733
+furred fussed 
+
+687733
+mussed nursed 
+
+787733
+pupped purred pursed supped 
+
+228733
+abused caused 
+
+268733
+amused couped 
+
+468733
+housed inured 
+
+768733
+poured roused souped soured soused 
+
+868733
+toupee toured unused 
+
+432833
+heated heaved 
+
+732833
+rebuff seated 
+
+752833
+plated skated slated slaved 
+
+262833
+boated coated 
+
+462833
+goatee imbued 
+
+272833
+braved crated craved 
+
+472833
+grated graved 
+
+782833
+stated staved 
+
+733833
+peeved reeved 
+
+743833
+rifted sieved sifted 
+
+924833
+waited waived 
+
+864833
+united vogued 
+
+784833
+quited suited 
+
+425833
+halted halved 
+
+725833
+salted salved 
+
+825833
+valued valved 
+
+335833
+delude delved felted 
+
+545833
+jilted lilted 
+
+726833
+panted ranted 
+
+336833
+dented denude 
+
+836833
+tented vented 
+
+746833
+rioted shoved 
+
+266833
+booted bootee 
+
+366833
+emoted footed 
+
+786833
+punted quoted 
+
+227833
+basted carted carved casted 
+
+327833
+darted farted fasted 
+
+727833
+parted pasted scruff 
+
+827833
+tarted tasted 
+
+637833
+nerved nested 
+
+737833
+rested served 
+
+837833
+tested vested 
+
+767833
+ported posted sorted 
+
+287833
+busted curved 
+
+728833
+patted ratted sauted 
+
+828833
+tatted tauted vatted 
+
+738833
+petted revved settee 
+
+768833
+potted pouted rotted routed 
+
+868833
+totted touted 
+
+788833
+putted rutted 
+
+252933
+blazed clawed 
+
+352933
+flawed flayed 
+
+262933
+amazed coaxed 
+
+462933
+gnawed hoaxed 
+
+272933
+brayed crazed 
+
+472933
+grayed grazed 
+
+772933
+prayed spayed 
+
+753933
+skewed slewed 
+
+273933
+brewed crewed 
+
+773933
+preyed spewed 
+
+756933
+plowed slowed 
+
+286933
+avowed buoyed 
+
+847243
+visage viscid 
+
+367243
+dosage enrage forage forbid 
+
+867243
+unpaid unsaid 
+
+728243
+ravage savage 
+
+368243
+dotage douche 
+
+688243
+outage outbid 
+
+753343
+pledge sledge 
+
+266543
+bookie cookie coolie 
+
+867743
+torpid torrid 
+
+788743
+putrid stupid 
+
+733843
+refuge seethe 
+
+266843
+bootie cootie 
+
+262253
+bobble cobble 
+
+362253
+doable enable 
+
+462253
+gobble hobble 
+
+782253
+rubble stable 
+
+723353
+paddle raffle saddle 
+
+923353
+waddle waffle 
+
+633353
+meddle needle 
+
+343353
+diddle fiddle 
+
+743353
+piddle piffle riddle riffle 
+
+683353
+muddle muffle 
+
+783353
+puddle ruffle 
+
+234353
+afield beheld 
+
+874353
+trifle upheld 
+
+366353
+doodle fondle 
+
+487353
+hurdle itself 
+
+424453
+gaggle haggle 
+
+736453
+penile senile 
+
+746453
+simile single 
+
+742553
+pickle sickle 
+
+738653
+retold revoke 
+
+746753
+pimple simple 
+
+787753
+purple supple 
+
+663853
+module nodule 
+
+487853
+hurtle hustle 
+
+228853
+battle cattle 
+
+638853
+mettle nettle 
+
+689953
+muzzle nuzzle 
+
+736263
+remand rename 
+
+737363
+resend serene 
+
+728463
+patine ravine 
+
+226273
+aboard canard 
+
+738273
+petard retard 
+
+738373
+revere severe 
+
+867473
+umpire unripe 
+
+738473
+retire revise 
+
+278473
+bruise cruise 
+
+233673
+afford before 
+
+467873
+impure insure 
+
+628873
+mature nature obtuse 
+
+466283
+inmate innate 
+
+237283
+aerate berate 
+
+378283
+equate estate 
+
+738483
+petite revive 
+
+336683
+demote denote 
+
+736683
+remote remove 
+
+747683
+shroud shrove 
+
+253624
+blench clench 
+
+373624
+drench french 
+
+783624
+quench stench 
+
+278624
+brunch crunch 
+
+276824
+crotch crouch 
+
+944924
+wigwag zigzag 
+
+756844
+plough slough 
+
+322464
+ebbing facing 
+
+722464
+pacing racing 
+
+523464
+jading lading 
+
+233464
+adding ceding 
+
+733464
+peeing seeing 
+
+243464
+ageing aiding biding 
+
+443464
+hiding hieing 
+
+743464
+pieing riding siding 
+
+843464
+tiding tieing 
+
+263464
+boding coding 
+
+224464
+aching caging 
+
+724464
+paging raging 
+
+225464
+baking baling caking 
+
+725464
+paling raking 
+
+925464
+waking waling 
+
+245464
+ailing biking bikini 
+
+645464
+miking ogling oiling 
+
+745464
+piking piling riling 
+
+465464
+holing inking 
+
+765464
+poking poling soling 
+
+865464
+toking voling 
+
+685464
+muling nuking 
+
+785464
+puking ruling 
+
+226464
+baning caning 
+
+346464
+dining fining 
+
+546464
+liming lining 
+
+646464
+miming mining 
+
+746464
+pining riming 
+
+846464
+timing tining vining 
+
+266464
+boning booing coming cooing 
+
+466464
+homing honing inning 
+
+966464
+wooing zoning 
+
+227464
+baring basing caring casing 
+
+327464
+daring easing faring 
+
+427464
+gaping haring 
+
+727464
+paring raping raring 
+
+827464
+taping taring 
+
+747464
+piping riping rising siring 
+
+847464
+tiring vising 
+
+947464
+wiping wiring 
+
+267464
+amping boring coping coring 
+
+367464
+doping dosing 
+
+467464
+goring hoping hosing 
+
+567464
+loping losing 
+
+667464
+moping nosing 
+
+767464
+poring posing roping soring 
+
+287464
+busing curing 
+
+387464
+duping during fusing 
+
+787464
+puring string 
+
+228464
+acting bating caving 
+
+328464
+dating eating fating 
+
+428464
+gating hating having 
+
+728464
+paving rating raving sating saving 
+
+248464
+biting citing 
+
+448464
+giving hiving 
+
+548464
+jiving kiting living 
+
+258464
+bluing cluing 
+
+268464
+anting coting 
+
+668464
+moving noting 
+
+768464
+roting roving 
+
+868464
+toting voting 
+
+688464
+muting outing 
+
+229464
+baying cawing 
+
+329464
+dazing faxing fazing 
+
+429464
+gazing hawing haying hazing 
+
+529464
+jawing laying lazing 
+
+629464
+mawing maxing 
+
+729464
+pawing paying razing sawing saying 
+
+929464
+waxing yawing 
+
+439464
+hewing hexing 
+
+639464
+mewing newing 
+
+739464
+sewing sexing 
+
+649464
+mixing nixing 
+
+749464
+shying sizing 
+
+759464
+plying skying 
+
+269464
+bowing boxing cowing 
+
+369464
+dozing foxing 
+
+569464
+joying lowing loxing 
+
+669464
+mowing oozing 
+
+769464
+poxing rowing sowing 
+
+869464
+towing toying vowing 
+
+379464
+drying frying 
+
+779464
+prying spying 
+
+867325
+unreal unseal 
+
+778325
+squeak squeal 
+
+774625
+primal spinal 
+
+266725
+amoral anorak 
+
+767825
+portal postal 
+
+786635
+pummel runnel 
+
+227735
+barrel carpel carrel 
+
+738665
+retook retool 
+
+747865
+pistol shrunk 
+
+332336
+deaden deafen 
+
+733336
+redden redeem 
+
+427336
+garden harden 
+
+542436
+libido lichen 
+
+742536
+shaken sicken 
+
+786536
+stolen sunken 
+
+627546
+marlin napkin 
+
+228466
+action cation 
+
+668466
+motion notion 
+
+725666
+salmon saloon 
+
+732766
+reason season 
+
+764766
+pogrom poison 
+
+766766
+pompom pompon 
+
+268866
+bottom cotton 
+
+288866
+autumn button 
+
+468376
+govern intern 
+
+763486
+podium sodium 
+
+633427
+medias medics 
+
+626427
+manias manics 
+
+266427
+comics congas conics 
+
+268427
+antics cougar 
+
+888527
+uvular uvulas 
+
+372627
+dramas francs 
+
+727827
+pastas scrubs 
+
+267827
+aortas costar 
+
+752237
+placer places 
+
+762237
+robber soccer 
+
+872237
+tracer traces 
+
+334237
+deicer deices 
+
+754237
+slicer slices 
+
+274237
+apices bribes 
+
+774237
+prices spices 
+
+874237
+triads tribes 
+
+584237
+juicer juices 
+
+226237
+camber cancer 
+
+326237
+dancer dances 
+
+526237
+lancer lances 
+
+336237
+fencer fences 
+
+466237
+gonads goober 
+
+386237
+dumber dunces 
+
+686237
+number ounces 
+
+728237
+saucer sauces 
+
+332337
+deader deafer 
+
+242337
+chafes chaffs 
+
+362337
+embeds emcees 
+
+562337
+loader loafer 
+
+472337
+grader grades 
+
+872337
+trader trades 
+
+782337
+quaffs staffs 
+
+733337
+redder reefer 
+
+933337
+wedder weeder 
+
+543337
+kidder liefer 
+
+363337
+dodder fodder 
+
+273337
+bredes breeds creeds 
+
+773337
+prefer speeds 
+
+783337
+puffer rudder steeds suffer 
+
+244337
+chides chiefs 
+
+454337
+glider glides 
+
+754337
+skiffs slider slides 
+
+764337
+snider snides sniffs 
+
+274337
+arider asides brides briefs 
+
+774337
+prides spider 
+
+265337
+bolder colder 
+
+465337
+golder golfer holder 
+
+726337
+pander sander scoffs 
+
+436337
+gender geodes 
+
+736337
+render sender 
+
+836337
+tender vender veneer 
+
+246337
+binder cinder 
+
+346337
+diodes finder 
+
+266337
+anodes confer 
+
+966337
+wonder woofer yonder 
+
+247337
+agrees bipeds 
+
+787337
+purees rupees surfer 
+
+358337
+eludes fluffs 
+
+222437
+babier babies caches 
+
+722437
+rabies racier 
+
+342437
+dicier fiches 
+
+742437
+richer riches 
+
+462437
+images inches 
+
+272437
+archer arches braids 
+
+382437
+etcher etches 
+
+782437
+rubier rubies stages 
+
+223437
+badger badges cadger cadges 
+
+333437
+defies eddies 
+
+433437
+hedges iffier 
+
+533437
+ledger ledges 
+
+743437
+ridges sieges 
+
+843437
+tidier tidies 
+
+263437
+bodies codger 
+
+363437
+dodger dodges 
+
+563437
+lodger lodges 
+
+224437
+achier cagier 
+
+644437
+nigger nigher 
+
+364437
+dogies fogies 
+
+564437
+jogger logger 
+
+274437
+aphids ashier 
+
+845437
+uglier uglies 
+
+465437
+hokier holier inkier 
+
+765437
+pokier solids 
+
+426437
+gamier hanger 
+
+626437
+manger manges 
+
+726437
+ranger ranges 
+
+926437
+zanier zanies 
+
+336437
+denier denies 
+
+446437
+ginger hinges 
+
+546437
+limier linger 
+
+746437
+ringer singer singes 
+
+846437
+tinges tinier 
+
+946437
+winger zinger 
+
+466437
+gooier homier 
+
+666437
+monger monies 
+
+227437
+barges bashes caries cashes 
+
+327437
+dashes easier easies 
+
+427437
+gashes hashes 
+
+527437
+larger larges lashes 
+
+627437
+masher mashes 
+
+727437
+rapids rapier rasher rashes sashes 
+
+927437
+warier washer washes 
+
+237437
+aerier aeries 
+
+637437
+merger merges meshes 
+
+837437
+verges verier 
+
+247437
+airier cipher 
+
+347437
+dirges dishes fisher fishes 
+
+947437
+wirier wisher wishes 
+
+267437
+copier copies cosier cosies 
+
+367437
+dopier dories forger forges 
+
+467437
+gopher gorges gorier goshes 
+
+567437
+joshes kosher 
+
+667437
+noshes nosier nosies 
+
+767437
+posher poshes posies rosier 
+
+287437
+burger buries bushes busier busies curies 
+
+487437
+gusher gushes hushes 
+
+587437
+juries lusher lushes 
+
+787437
+purges pusher pushes rushes surges 
+
+228437
+bather bathes 
+
+528437
+lather lathes 
+
+348437
+dither either 
+
+948437
+wither withes zither 
+
+268437
+anther bother 
+
+468437
+gouger gouges 
+
+668437
+mother motifs movies 
+
+529437
+lazier lazies 
+
+269437
+cozier cozies 
+
+222537
+backer cables 
+
+422537
+gables hacker 
+
+722537
+packer sables scalds scales 
+
+732537
+realer sealer 
+
+242537
+bibles bicker 
+
+742537
+picker shaker shakes sicker 
+
+942537
+whaler whales wicker 
+
+662537
+mocker nobler nobles 
+
+762537
+rocker snakes 
+
+782537
+pucker quakes rubles stakes staler stales sucker 
+
+292537
+awakes cycles 
+
+743537
+rifles sidles 
+
+943537
+wields yields 
+
+244537
+agiler chiles 
+
+264537
+angler angles boiler 
+
+284537
+bugler bugles builds 
+
+484537
+guilds guiles 
+
+825537
+talker taller 
+
+645537
+milker miller 
+
+385537
+duller fuller 
+
+226537
+banker canker 
+
+726537
+ranker scolds 
+
+246537
+choker chokes choler 
+
+746537
+pinker sinker 
+
+266537
+cooker cooler 
+
+766537
+smoker smokes 
+
+786537
+punker stoker stokes stoles 
+
+627537
+maples marker 
+
+967537
+worker worlds 
+
+487537
+hurler husker 
+
+252637
+blamer blames 
+
+462637
+hoboes inaner 
+
+272637
+brands cranes 
+
+372637
+framer frames 
+
+363637
+dodoes emends 
+
+873637
+trends upends 
+
+324637
+echoes fainer 
+
+744637
+shiner shines signer 
+
+944637
+whiner whines 
+
+254637
+blinds climes 
+
+474637
+grimes grinds 
+
+774637
+primer primes spines 
+
+226637
+banner canoes 
+
+926637
+wanner yammer 
+
+346637
+dimmer dinner finner 
+
+746637
+phones simmer sinner 
+
+256637
+blonds bloods clones 
+
+766637
+roomer sooner 
+
+276637
+broods crones 
+
+376637
+drones fronds 
+
+776637
+proofs spoofs 
+
+286637
+atones bummer 
+
+386637
+dunner funner 
+
+786637
+rummer runner stones summer 
+
+327637
+earner farmer 
+
+367637
+dormer former 
+
+768637
+pounds rounds sounds 
+
+778637
+prunes spumes 
+
+722737
+sabres scares scarfs 
+
+232737
+beards bearer ceases 
+
+832737
+teaser teases 
+
+242737
+biases chaser chases 
+
+742737
+phases shapes shards shares 
+
+252737
+alases blares 
+
+372737
+drapes eraser erases 
+
+772737
+sparer spares 
+
+292737
+awards awarer 
+
+324737
+daises fairer 
+
+664737
+moires noises 
+
+764737
+poises sniper snipes 
+
+274737
+arises crises 
+
+474737
+gripes irises 
+
+726737
+pamper scopes scorer scores 
+
+236737
+adores censer 
+
+836737
+temper tenser tenses 
+
+246737
+chords chores 
+
+746737
+rinses shores simper 
+
+256737
+closer closes 
+
+356737
+elopes fjords 
+
+566737
+looser looses 
+
+766737
+poorer romper snorer snores 
+
+776737
+proper proses spores 
+
+527737
+jasper lapses lasses 
+
+627737
+mapper masses 
+
+727737
+parser parses passer passes rapper sasses 
+
+437737
+hepper herpes 
+
+837737
+terser verses vesper 
+
+347737
+dipper disses 
+
+447737
+hipper hisses 
+
+547737
+kipper kisser kisses 
+
+647737
+misses nipper 
+
+747737
+pisses ripper sisses 
+
+267737
+bosser bosses copper copses 
+
+467737
+hopper horses hosses 
+
+667737
+mosses oopses 
+
+867737
+torses tosses 
+
+287737
+busses curses cusses 
+
+687737
+musses nurses 
+
+787737
+purser purses pusses supper 
+
+228737
+abuser abuses causes 
+
+728737
+pauper pauses 
+
+268737
+amuses anuses coupes 
+
+368737
+dourer douses 
+
+468737
+gourds houses inures 
+
+668737
+mouser mouses onuses 
+
+768737
+rouses sourer souses 
+
+232837
+beater beaver 
+
+432837
+heater heaves 
+
+932837
+weaver weaves 
+
+742837
+shaver shaves 
+
+752837
+plates skater skates slates slaver slaves 
+
+262837
+boater coater 
+
+562837
+knaves loaves 
+
+272837
+braver braves crater crates craves 
+
+472837
+grater grates graver graves irater 
+
+772837
+prates spates 
+
+782837
+quaver stater states staves suaver 
+
+733837
+peeves reeves 
+
+743837
+sieves sifter 
+
+253837
+clever cleves 
+
+624837
+naiver naives 
+
+824837
+vaguer vagues 
+
+924837
+waiter waiver waives 
+
+944837
+whiter whites 
+
+564837
+knives loiter 
+
+764837
+rogues smites 
+
+864837
+unites vogues 
+
+374837
+driver drives 
+
+874837
+triter trites 
+
+974837
+writer writes 
+
+784837
+quites quiver suites 
+
+425837
+halter halves 
+
+725837
+salter salver salves 
+
+825837
+values valves 
+
+735837
+pelves selves 
+
+765837
+solver solves 
+
+226837
+banter canter 
+
+746837
+rioter shoves 
+
+256837
+clouds clover cloves 
+
+466837
+hooter hooves 
+
+376837
+drover droves 
+
+786837
+punter quotes stoves 
+
+227837
+barter bastes carver carves caster castes 
+
+427837
+garter hastes 
+
+727837
+pastes raster 
+
+827837
+tarter taster tastes vaster 
+
+927837
+waster wastes 
+
+737837
+perter pester server serves 
+
+837837
+tester testes 
+
+747837
+piques sister 
+
+367837
+ensues fortes foster 
+
+767837
+porter poster roster sorter 
+
+867837
+toques tortes 
+
+287837
+buster curter curves 
+
+587837
+juster luster 
+
+687837
+muster ouster 
+
+228837
+acuter acutes batter 
+
+628837
+matter mattes 
+
+828837
+tatter tauter 
+
+738837
+revues setter 
+
+248837
+bitter chutes 
+
+768837
+potter router routes 
+
+288837
+butter buttes cutter 
+
+252937
+blazer blazes 
+
+752937
+player slayer 
+
+262937
+amazes coaxes 
+
+462937
+hoaxer hoaxes 
+
+472937
+grayer grazes 
+
+273937
+apexes brewer 
+
+266937
+boozer boozes 
+
+529937
+jazzes lawyer 
+
+729937
+razzes sawyer 
+
+289937
+buzzer buzzes 
+
+268447
+boughs coughs 
+
+768447
+roughs soughs 
+
+332847
+deaths debugs 
+
+237847
+berths bestir 
+
+252257
+blacks clacks 
+
+562257
+knacks locals 
+
+762257
+smacks snacks 
+
+782257
+quacks stacks 
+
+273257
+breaks creaks 
+
+773257
+speaks specks 
+
+973257
+wreaks wrecks 
+
+783257
+steaks steals 
+
+274257
+bricks cricks 
+
+874257
+trials tricks 
+
+746257
+shoals shocks 
+
+256257
+blocks cloaks clocks 
+
+276257
+croaks crocks 
+
+748257
+rivals shucks 
+
+273357
+creeks creels 
+
+468357
+hotels hovels 
+
+668357
+motels novels 
+
+869357
+towels vowels 
+
+228457
+batiks cavils 
+
+782557
+stalks stalls 
+
+374557
+drills frills 
+
+784557
+quills stills 
+
+758557
+skulks skulls 
+
+252657
+blanks clanks 
+
+772657
+pranks spanks 
+
+254657
+blinks clinks 
+
+276657
+brooks crooks 
+
+776657
+spooks spools 
+
+758657
+plunks skunks 
+
+782757
+quarks starks 
+
+944757
+whirls whisks 
+
+742957
+shawls sibyls 
+
+272957
+brawls crawls 
+
+623267
+madams oceans 
+
+453267
+gleams gleans 
+
+486267
+gumbos humans 
+
+586267
+jumbos juncos 
+
+226367
+cameos candor 
+
+266367
+condor condos 
+
+747367
+ripens sirens 
+
+369367
+doyens dozens 
+
+334467
+deigns feigns 
+
+227467
+basins cargos 
+
+728467
+pathos patios ratios satins savior 
+
+924667
+wagons yahoos 
+
+276667
+brooms croons 
+
+776667
+promos spoons 
+
+227667
+barons capons caroms 
+
+267667
+bosoms cosmos 
+
+242767
+charms chasms 
+
+236767
+adorns censor 
+
+836767
+tempos tensor 
+
+867767
+torpor torsos 
+
+287767
+burros cursor 
+
+732867
+rector sector 
+
+226867
+cantor cantos 
+
+746867
+photos pintos 
+
+227867
+captor castor 
+
+737867
+reruns serums servos 
+
+847867
+thrums tiptop 
+
+772967
+prawns spawns 
+
+276967
+browns crowns 
+
+376967
+drowns frowns 
+
+222377
+abbess access 
+
+722377
+racers sabers 
+
+923377
+waders wafers 
+
+243377
+cheeps cheers ciders 
+
+743377
+riders sheers 
+
+253377
+alders bleeps 
+
+463377
+gofers infers 
+
+783377
+queers steeps steers 
+
+754377
+pliers skiers 
+
+274377
+briers criers 
+
+266377
+boners comers 
+
+466377
+goners homers inners 
+
+227377
+capers caress 
+
+747377
+pipers risers 
+
+787377
+stress supers 
+
+928377
+waters wavers 
+
+338377
+deters fevers 
+
+738377
+peters severs 
+
+548377
+liters livers 
+
+468377
+hovers inters 
+
+688377
+otters outers 
+
+269377
+bowers boxers cowers 
+
+769377
+powers rowers sowers 
+
+379377
+dryers fryers 
+
+272677
+arbors cramps 
+
+774677
+primps priors 
+
+876677
+tromps troops 
+
+786677
+rumors stomps stoops 
+
+758677
+plumps slumps 
+
+336877
+demurs femurs 
+
+253287
+bleats cleats 
+
+353287
+ejects elects 
+
+234387
+adieus begets 
+
+465387
+holdup inlets 
+
+237387
+berets besets 
+
+344487
+digits eights fights 
+
+744487
+rights sights 
+
+784587
+quilts stilts 
+
+752687
+plants slants 
+
+324687
+fagots faints 
+
+724687
+paints saints 
+
+428687
+gaunts haunts 
+
+828687
+taunts vaunts 
+
+338687
+detour devour 
+
+748687
+pivots shunts 
+
+232787
+adapts beasts 
+
+262787
+boasts coasts 
+
+762787
+roasts smarts 
+
+782787
+quarts starts 
+
+226787
+aborts campus 
+
+236787
+adopts census 
+
+766787
+roosts snorts 
+
+277297
+arrays assays 
+
+787297
+straws strays 
+
+466397
+homeys honeys 
+
+667397
+moseys noseys 
+
+255697
+allows alloys 
+
+333328
+defeat defect effect 
+
+735328
+reject select 
+
+722538
+packet racket 
+
+762538
+pocket rocket socket 
+
+227538
+basket caplet casket 
+
+787738
+puppet russet 
+
+254448
+alight blight 
+
+754448
+plight slight 
+
+274448
+aright bright 
+
+737368
+repent resent 
+
+468368
+intent invent 
+
+227378
+barest basest 
+
+277378
+arrest assert 
+
+787378
+purest surest 
+
+348378
+divert divest 
+
+468378
+invert invest 
+
+288378
+attest cutest 
+
+727478
+rapist script 
+
+787478
+purist stript 
+
+737678
+report resort 
+
+688529
+outlaw outlay 
+
+733729
+redraw seesaw 
+
+746639
+phoney phooey 
+
+266839
+convex convey 
+
+787839
+purvey survey 
+
+758749
+plushy slushy 
+
+943359
+widely wifely 
+
+783359
+rudely steely 
+
+265359
+boldly coldly 
+
+466359
+goodly homely 
+
+227359
+barely basely 
+
+787359
+purely surely 
+
+568359
+loudly lovely 
+
+444459
+giggly highly 
+
+768459
+smugly snugly 
+
+632759
+measly nearly 
+
+746759
+pimply simply 
+
+827859
+tartly vastly 
+
+744669
+shimmy shinny 
+
+627769
+marrow narrow 
+
+243379
+cheery cheesy 
+
+235379
+belfry celery 
+
+272779
+brassy crappy 
+
+782779
+quarry starry 
+
+246779
+biopsy choppy 
+
+736879
+penury sentry 
+
+644489
+mighty nighty 
+
+727489
+parity rarity 
+
+228489
+acuity cavity 
+
+378489
+equity fruity 
+
+268689
+bounty county 

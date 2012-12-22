@@ -1,0 +1,10 @@
+# Play Nine, programmed in Python
+
+# We need a board class
+
+class Board():
+    
+    players = []
+    
+    def __init__():
+        
