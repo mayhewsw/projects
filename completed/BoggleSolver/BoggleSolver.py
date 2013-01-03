@@ -36,10 +36,11 @@ def BoggleSolver():
     # If there are commands from the command line
     if len(sys.argv) > 1:
         gridString = sys.argv[1] 
-	boardSize = math.sqrt(len(gridString))
-	if sqrt(boardSize) - floor(sqrt(boardSize)) != 0:
+	boardSize = sqrt(len(gridString))
+	if boardSize - floor(boardSize) != 0:
 		print("Error: input string is not a square number")
 		return
+        boardSize = int(boardSize)
         print("Using word: " + gridString)
     else:
         print("Using default word: " + gridString)
