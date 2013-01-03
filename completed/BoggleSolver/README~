@@ -1,0 +1,30 @@
+BoggleSolver - README
+----------------------
+
+This program will find all the word solutions for Boggle. 
+
+Invoke it like this:
+
+  >> python BoggleSolver.py <inputstring>
+
+Note that <inputstring> represents the board. If a 4x4
+board looks like this:
+
+     s h o r
+     g i s t
+     h t e d
+     s s e n
+
+then <inputstring> is: 'shorgisthtedssen'
+
+There are a few restrictions on the input string:
+      - It must contain lowercase letters only (no numbers, punctuation, etc.)
+      - Its length must be a square number (e.g. 9, 25, 36, ...)
+
+Naturally, the longer the string, the slower the 
+      
+      
+
+
+
+words.txt is 
