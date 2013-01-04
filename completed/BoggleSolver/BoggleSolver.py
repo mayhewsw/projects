@@ -7,6 +7,13 @@ Nov. 17, 2010
 import sys
 from math import sqrt,floor
 
+# Here follow some hard-coded game rules
+# form: {<boardsize> : {<word length>:<score>, ...} ... }
+gameScoring = {4 : {3:1, 4:1, 5:2, 6:3, 7:5, 8:11, "large":lambda n: 11},
+               5 : {3:1, 4:1, 5:2, 6:3, 7:5, 8:11, "large":lambda n: 11},
+               6 : {4:1, 5:2, 6:3, 7:5, 8:11, "large":lambda n: 2*n}}
+
+
 def BoggleSolver():
     '''
     This solves a game of boggle using a dictionary file. 
@@ -50,7 +57,7 @@ def BoggleSolver():
         boardSize = 0
         for c in gridString:
             # just don't count the uppercase letters
-            if c.islower():
+            if c.islower() or c == ".":
                 boardSize += 1
         
 	boardSize = sqrt(boardSize)
@@ -127,7 +134,7 @@ def BoggleSolver():
     # Note the use of the optional argument in contains. This forces it to 
     # match the word exactly, instead of allowing partial matches
     for word in allWords:
-        if dict.contains(word, True) and len(word) > 2 and word not in final:
+        if dict.contains(word, True) and len(word) >= smallestLength(boardSize) and word not in final:
             final.append(word)
     
     # Put the largest words first
@@ -140,9 +147,22 @@ def BoggleSolver():
         
     finalString = finalString[:-2]
     print(finalString)
+
+    # scoring
+    score = 0
+    for w in final:
+        if len(w) in gameScoring[boardSize]:
+            score += gameScoring[boardSize][len(w)]
+        else:
+            score += gameScoring[boardSize]["large"](len(w))
+    print("Final score: " + str(score))
     
-    
-                    
+def smallestLength(boardSize):
+    ''' hardcoded from the game rules '''
+    if boardSize == 4 or boardSize == 5:
+        return 3
+    if boardSize >= 6:
+        return 4
 
 def convertListToLetters(wordList, grid):
     '''
