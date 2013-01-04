@@ -28,3 +28,9 @@ but has some words removed, namely words with apostrophes and words with accents
 
 See http://en.wikipedia.org/wiki/Words_(Unix).
 
+What's left to do
+-----------------
+
+Set it up so that it can accept an image, recognize the characters, and solve the
+game. Shouldn't be too hard... 
+
