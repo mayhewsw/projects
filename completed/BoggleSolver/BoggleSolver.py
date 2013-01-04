@@ -18,7 +18,7 @@ def BoggleSolver():
     # Input some file with a list of words separated by whitespace 
     file = open('words.txt', 'r')
     dictFile = file.read()
-    dict = MyDict(dictFile)
+    dict = MyDict(dictFile) # Ooh, bad naming, young Steve
     
     # Grid string is the characters from each row of the board. 
     # If the board looks like:
@@ -27,6 +27,16 @@ def BoggleSolver():
     #     h t e d
     #     s s e n
     # Then gridString is: 'shorgisthtedssen'
+
+    # Some boards have double letters (as in Qu),
+    # in order to accommodate these, type the first letter in upper case, like so:
+
+    #     s h  o r
+    #     g i  s t
+    #     h Qu e d
+    #     s s  e n
+    
+    # which becomes: "shorgisthQuedssen"
 	
     # 4 is the standard size for boggle boards, but other numbers work as well.
     # Naturally, larger boards will slow down computation times.    
@@ -35,8 +45,15 @@ def BoggleSolver():
     
     # If there are commands from the command line
     if len(sys.argv) > 1:
-        gridString = sys.argv[1] 
-	boardSize = sqrt(len(gridString))
+        gridString = sys.argv[1]
+
+        boardSize = 0
+        for c in gridString:
+            # just don't count the uppercase letters
+            if c.islower():
+                boardSize += 1
+        
+	boardSize = sqrt(boardSize)
 	if boardSize - floor(boardSize) != 0:
 		print("Error: input string is not a square number")
 		return
@@ -44,23 +61,34 @@ def BoggleSolver():
         print("Using word: " + gridString)
     else:
         print("Using default word: " + gridString)
-        
-    
-    if len(gridString) != boardSize * boardSize:
-        print("String must be %d characters long!" % (boardSize * boardSize))
-        return
 
-    # This takes the gridString and converts it
-    # into a nested (boardSize x boardSize) list
-    grid = []
-    for i in range(boardSize):
-        newList = []
-        for j in range(boardSize):
-            c = gridString[i * boardSize + j]
-            if c == 'q':
-                c = 'qu'
-            newList.append(c)
-        grid.append(newList)
+    def combine(lst):
+        delUs = []
+        for i,c in enumerate(lst):
+            if len(c) == 1 and c.isupper():
+                lst[i] = lst[i] + lst[i+1]
+                delUs.append(i+1)
+
+        offset = 0
+        for i in delUs:
+            del lst[i-offset]
+            offset += 1
+        return lst
+
+    grid = combine(list(gridString))
+
+    def reshape(lst):
+        ''' Yes, I know there is a NumPy
+        function for this. I wanted to
+        save on the imports '''
+        grid = []
+        curr = 0
+        for i in range(boardSize):
+            grid.append(lst[curr:curr+boardSize])
+            curr += boardSize
+        return grid
+    
+    grid = reshape(grid)
     
     wordList = []
     
@@ -76,12 +104,12 @@ def BoggleSolver():
 
             # this will grow wordlist as it adds 
             for word in wordList:
-                    newWords = getWords(word, grid, boardSize)
+                    newWords = getWords(word, boardSize)
                     if len(newWords) > 0:
                         addUsIn = []
                         for w in newWords:
                             #if w does not lead to another string
-                            s = convertListToLetters([w], grid, boardSize)[0]
+                            s = convertListToLetters([w], grid)[0]
                             # if s is a single letter, or if is in dict
                             if len(s) == 1 or dict.contains(s) and not w in wordList:    
                                 addUsIn.append(w)
@@ -89,7 +117,7 @@ def BoggleSolver():
                         wordList += addUsIn
                         
     # Convert the list of lists of tuples to a list of strings
-    allWords = convertListToLetters(wordList, grid, boardSize)
+    allWords = convertListToLetters(wordList, grid)
     final = []
     
     # Remove words that aren't actually words, but only lead to other words
@@ -113,7 +141,7 @@ def BoggleSolver():
     
                     
 
-def convertListToLetters(wordList, grid, gridsize):
+def convertListToLetters(wordList, grid):
     '''
     wordList is a list of lists of tuples. 
         Viz: [[(0,0), (0,1)], [(0,0)]]
@@ -131,7 +159,7 @@ def convertListToLetters(wordList, grid, gridsize):
     
 
 
-def getWords(word, grid, gridsize):
+def getWords(word, gridsize):
     '''
     This takes a word (in this case, a list of tuples), and finds what possible squares from the grid could be 
     tacked on the end. The only restrictions are that you can't use the same grid square twice, and you have to
@@ -263,7 +291,6 @@ class MyDict(object):
         this = "function is empty"
      
      
-        
     def __repr__(self):
         '''
         Overrides the print function for the class
@@ -271,9 +298,9 @@ class MyDict(object):
         print(self.dict.keys())
 
 
-
-    
 if __name__ == "__main__":
     from timeit import Timer
     t = Timer("BoggleSolver()", "from __main__ import BoggleSolver")
     print("\n\nIt took %f seconds to solve this board." % t.timeit(1))
+
+    
