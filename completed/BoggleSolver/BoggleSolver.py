@@ -66,7 +66,7 @@ def BoggleSolver():
         delUs = []
         for i,c in enumerate(lst):
             if len(c) == 1 and c.isupper():
-                lst[i] = lst[i] + lst[i+1]
+                lst[i] = c.lower() + lst[i+1]
                 delUs.append(i+1)
 
         offset = 0
@@ -109,7 +109,10 @@ def BoggleSolver():
                         addUsIn = []
                         for w in newWords:
                             #if w does not lead to another string
-                            s = convertListToLetters([w], grid)[0]
+                            # s will have size one, by definition (b/c [w])
+                            s = convertListToLetters([w], grid)
+                            assert len(s) == 1
+                            s = s[0]
                             # if s is a single letter, or if is in dict
                             if len(s) == 1 or dict.contains(s) and not w in wordList:    
                                 addUsIn.append(w)
@@ -154,7 +157,6 @@ def convertListToLetters(wordList, grid):
             s += grid[c[0]][c[1]]
             
         words.append(s)
-        
     return words 
     
 
