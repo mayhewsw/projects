@@ -101,13 +101,13 @@ def parse():
     x_test = x[split:]
     
     y_train = y[:split]
-    t_test = y[split:]
+    y_test = y[split:]
 
     m = svm_train(y_train, x_train)
     p_label, p_acc, p_val = svm_predict(y_test, x_test, m)
 
     print p_label, p_acc, p_val
-    ACC, MSE, SCC = evaluations(y, p_label)
+    ACC, MSE, SCC = evaluations(y_test, p_label)
     print ACC, MSE, SCC
 
     
