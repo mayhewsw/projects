@@ -51,12 +51,17 @@ def parse():
     #dicts = []
 
     y, x = [], []
+
+    seen = set()
     
     print "Parsing English..."
     # Parse english first
     #enDict = parseLang(nltk.corpus.treebank.words(), "english")
     #dicts.append(enDict)
     for w in nltk.corpus.treebank.words():
+        if w in seen:
+            continue
+        seen.add(w)
         fv = makeVector(w, "english")
         y.append(fv.getLabel())
         x.append(fv.getFeatDict())
@@ -66,6 +71,9 @@ def parse():
     #esDict = parseLang(nltk.corpus.cess_esp.words(), "spanish", 'es_ES.utf8')
     #dicts.append(esDict)
     for w in nltk.corpus.cess_esp.words():
+        if w in seen:
+            continue
+        seen.add(w)
         fv = makeVector(w, "spanish")
         y.append(fv.getLabel())
         x.append(fv.getFeatDict())
@@ -75,6 +83,9 @@ def parse():
     #nlDict = parseLang(nltk.corpus.alpino.words(), "dutch", 'nl_NL.utf8')
     #dicts.append(nlDict)
     for w in nltk.corpus.alpino.words():
+        if w in seen:
+            continue
+        seen.add(w)
         fv = makeVector(w, "dutch")
         y.append(fv.getLabel())
         x.append(fv.getFeatDict())
