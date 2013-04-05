@@ -1,3 +1,5 @@
+#!/usr/bin/python
+
 # Language classifier
 # In short:
 # Tokenize corpora by space, and create bigrams, trigrams, using letters.
@@ -13,6 +15,9 @@ import re
 import locale
 import math
 import operator
+from svmutil import *
+
+from FeatureVector import FeatureVector
 
 # corpora
 # cess_esp: spanish
@@ -22,57 +27,97 @@ import operator
 # French website
 # http://www.lemonde.fr/
 
+def parseLang(corpus, langname, loc=None):
+    if loc is not None:
+        locale.setlocale(locale.LC_CTYPE, loc)
+    tokenlist = []
+    seen = set()
+    total = 0
+    for w in corpus:
+        if w not in seen:
+            tokenlist += splitWord(w, 2)
+            seen.add(w)
+            total += 1
+    return makeHist(tokenlist, langname)
+
+def makeVector(w, lang):
+    fv = FeatureVector()
+    for f in splitWord(w,2):
+        fv.add(f)
+    fv.setLabel(lang)
+    return fv
+
 def parse():
+    #dicts = []
 
-    dicts = []
-
-    # print "Parsing English..."
-    # # Parse english first
-    # enList = []
-    # for w in nltk.corpus.treebank.words():
-    #     enList += splitWord(w, 2)
-    #     # enList += splitWord(w, 3)
-    # enDict = makeHist(enList, "english")
-    # dicts.append(enDict)
+    y, x = [], []
     
-    # print "Parsing Spanish..."
-    # esList = []
-    # # Parse Spanish
-    # locale.setlocale(locale.LC_CTYPE, 'es_ES')
-    # for w in nltk.corpus.cess_esp.words():
-    #     esList += splitWord(w, 2)
-    #     # esList += splitWord(w, 3)
-    # esDict = makeHist(esList, "spanish")
-    # dicts.append(esDict)
+    print "Parsing English..."
+    # Parse english first
+    #enDict = parseLang(nltk.corpus.treebank.words(), "english")
+    #dicts.append(enDict)
+    for w in nltk.corpus.treebank.words():
+        fv = makeVector(w, "english")
+        y.append(fv.getLabel())
+        x.append(fv.getFeatDict())
 
 
-    # print "Parsing Dutch..."
-    # # Parse Dutch
-    # locale.setlocale(locale.LC_CTYPE, 'nl_NL')
-    # nlList = []
-    # for w in nltk.corpus.alpino.words():
-    #     nlList += splitWord(w, 2)
-    #     # nlList += splitWord(w, 3)
-    # nlDict = makeHist(nlList, "dutch")
-    # dicts.append(nlDict)
+    print "Parsing Spanish..."
+    #esDict = parseLang(nltk.corpus.cess_esp.words(), "spanish", 'es_ES.utf8')
+    #dicts.append(esDict)
+    for w in nltk.corpus.cess_esp.words():
+        fv = makeVector(w, "spanish")
+        y.append(fv.getLabel())
+        x.append(fv.getFeatDict())
 
+    
+    print "Parsing Dutch..."
+    #nlDict = parseLang(nltk.corpus.alpino.words(), "dutch", 'nl_NL.utf8')
+    #dicts.append(nlDict)
+    for w in nltk.corpus.alpino.words():
+        fv = makeVector(w, "dutch")
+        y.append(fv.getLabel())
+        x.append(fv.getFeatDict())
+
+
+    print "Num features:"
+    print len(FeatureVector._featuremap.feat_ind)
+
+    ratio = 0.8
+    split = int(len(x)*ratio)
+
+    x_train = x[:split]
+    x_test = x[split:]
+    
+    y_train = y[:split]
+    t_test = y[split:]
+
+    m = svm_train(y_train, x_train)
+    p_label, p_acc, p_val = svm_predict(y_test, x_test, m)
+
+    print p_label, p_acc, p_val
+    ACC, MSE, SCC = evaluations(y, p_label)
+    print ACC, MSE, SCC
+
+    
     # locale.resetlocale(locale.LC_CTYPE)
 
-    latin_langs = filter(lambda n: "Latin" in n, udhr.fileids())
-    for lang in latin_langs:
-        print "Parsing " + lang + "..."
-        lang_list= []
-        for w in udhr.words(lang):
-            lang_list = splitWord(w, 2)
-        lang_dict = makeHist(lang_list, lang)
-        dicts.append(lang_dict)
+    # latin_langs = filter(lambda n: "Latin" in n, udhr.fileids())
+    # for lang in latin_langs:
+    #     print "Parsing " + lang + "..."
+    #     lang_list= []
+    #     for w in udhr.words(lang):
+    #         lang_list = splitWord(w, 2)
+    #     lang_dict = makeHist(lang_list, lang)
+    #     dicts.append(lang_dict)
 
     # return all dictionaries
-    return dicts
+    # return dicts
 
 def train():
     # for each language, make the dictionaries.
     pass
+
 
 def test(input, dicts):
     # for a given input, split it
@@ -93,8 +138,7 @@ def test(input, dicts):
     
     # get the log probabilities
     
-    
-        
+           
 def makeHist(ngramlst, language):
     ''' Create a histogram given a list '''
     d = defaultdict(int)
@@ -129,15 +173,16 @@ def splitWord(w, n):
     
     
 if __name__ == "__main__":
-    dicts = parse()
+    #dicts = parse()
+    parse()
 
-    print "Enter a word: (q to quit)"
-    user = raw_input()
-    while(user != 'q'):
-        scoredict = test(user, dicts)
-        sorted_dict = sorted(scoredict.iteritems(), key=operator.itemgetter(1))
-        sorted_dict.reverse()
-        for i in range(5):
-            print sorted_dict[i]
-        print "\nEnter a word: (q to quit)"
-        user = raw_input()
+    # print "Enter a word: (q to quit)"
+    # user = raw_input()
+    # while(user != 'q'):
+    #     scoredict = test(user, dicts)
+    #     sorted_dict = sorted(scoredict.iteritems(), key=operator.itemgetter(1))
+    #     sorted_dict.reverse()
+    #     for i in range(len(sorted_dict)):
+    #         print sorted_dict[i]
+    #     print "\nEnter a word: (q to quit)"
+    #     user = raw_input()
