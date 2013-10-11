@@ -44,6 +44,7 @@ from nltk.corpus import gutenberg
 from nltk.corpus import wordnet as wn
 import string
 import random
+from nltk.corpus import PlaintextCorpusReader
 
 class KeyPhrase:
     '''
@@ -252,7 +253,6 @@ def getRandPhrase(word, text):
     return text[currstart+1:currend+1]
     
 
-
 def repl():
     '''
     This is the Read-Eval-Print loop for the dialogue.
@@ -260,9 +260,11 @@ def repl():
 
     # Setup the dictionary, preprocessing
     print "You'll have to pardon me, at my age, it takes several moments to memorize all of Shakespeare..."
-    shake = gutenberg.words('shakespeare-caesar.txt')
+    #shake = gutenberg.words('shakespeare-caesar.txt')
     #shake = gutenberg.words('shakespeare-complete.txt')
     #print "Done with getwords"
+    pcr = PlaintextCorpusReader(".", 'shakespeare.*')
+    shake = pcr.words("shakespeare-complete.txt")
     imps = getNimportant(shake,500)
     print imps
     #print "Done with get imps"
