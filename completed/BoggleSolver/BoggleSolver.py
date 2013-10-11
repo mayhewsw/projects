@@ -1,3 +1,5 @@
+#!/usr/bin/python
+
 '''
 This was written for Python 3.1
 Stephen Mayhew

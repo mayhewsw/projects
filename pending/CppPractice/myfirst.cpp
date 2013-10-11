@@ -3,7 +3,7 @@ using namespace std;
 
 int main()
 {
-    string l = "I love you Heidi\n";
+    string l = "How to use C++??\n";
     cout << l;
     return 0;
 
