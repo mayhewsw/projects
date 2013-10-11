@@ -1,8 +1,0 @@
-from pdftotext import pdf_to_text
-
-text = pdf_to_text("test.pdf")
-print text
-
-# Look for page that says references / or something
-
-# Connect to google scholar search?
