@@ -1,6 +1,0 @@
-# Language classifier
-# In short:
-# Tokenize corpora by space, and create bigrams, trigrams, using letters.
-# For example: "frogs eat fancy mangers" -> $f, fr, ro, og, gs, s_, _e, ea, ... etc.
-# Testing would just be checking against various types of classifiers...
-# Could also come up with backwards english classifier.
