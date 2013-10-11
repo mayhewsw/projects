@@ -1,9 +1,0 @@
-There is already an online program to do this. Can I do it faster? 
-
-An important aspect of this is that it will split the input into several words if necessary. 
-
-For example: "Eddie Mayhew" makes "may he die wed."
-
-I believe the way this is accomplished is just to include a space in the input string. 
-
-Then include two spaces, etc. 
