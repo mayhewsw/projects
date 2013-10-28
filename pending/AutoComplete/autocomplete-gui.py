@@ -57,7 +57,7 @@ class App:
         if not hobj.spell(lastword):
 
             probs = [(sug,self.lm.prob(sug,context)) for sug in hobj.suggest(lastword)]
-            print probs
+            #print probs
 
             fixed = max(probs, key=itemgetter(1))[0] + punc
         else:
