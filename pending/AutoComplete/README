@@ -1,1 +1,6 @@
 This was meant to be a better version of Apple's AutoComplete pop up in iOS.
+
+This requires: 
+  - hunspell
+  - libhunspell-dev
+  - pyhunspell
