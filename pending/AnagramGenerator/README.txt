@@ -4,4 +4,4 @@ An important aspect of this is that it will split the input into several words i
 
 For example: "Eddie Mayhew" makes "may he die wed."
 
-The first run would just try all characters together without any spaces. Then include a space in the input string. Then include two spaces, etc. 
+The naive algorithm would just try all characters together without any spaces. Then include a space in the input string. Then include two spaces, etc. 
