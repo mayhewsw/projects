@@ -43,15 +43,18 @@ if __name__ == "__main__":
 
     print "Press enter after each word"
     prompt = ">> "
-    s = raw_input(prompt)
+    s = raw_input(prompt).split()
     fullS = ""
     
-    while s != "":
-        
-        if not hobj.spell(s):
-            s = hobj.suggest(s)[0]
-        fullS += s.strip() + " "
-        print fullS
-        s = raw_input(prompt)
+    while True:
+        for word in s:
+            if not hobj.spell(word):
+                word = hobj.suggest(word)[0]
+            fullS += word.strip() + " "
+            print fullS
+
+        s = raw_input(prompt).split()
+        if s[0] == "":
+            break
 
     #print fullS

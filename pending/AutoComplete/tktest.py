@@ -1,6 +1,11 @@
 from Tkinter import *
 import hunspell
 
+from nltk.corpus import brown
+from nltk.probability import LidstoneProbDist, WittenBellProbDist
+from nltk.model import NgramModel
+
+from operator import itemgetter
 
 class App:
 
@@ -25,12 +30,23 @@ class App:
         
         self.button = Button(frame, text="Quit", command=frame.quit,highlightthickness=0, font=("Helvetica", 15, ""))
         self.button.pack(padx = 5,pady=5, side=LEFT)
+
+
+        self.n = 2
+        corpus = brown.words(categories="news")
+        est = lambda fdist, bins: LidstoneProbDist(fdist, 0.2)
+        self.lm = NgramModel(self.n, corpus, estimator=est)
+
         
 
     def space_pressed(self, event):
         s = self.entry.get()
         lastword = s.split()[-1]
+        context = s.split()[:-1]
 
+        if len(context) > self.n-1:
+            context = context[1-self.n:]
+        
         punc = ""
         if lastword[-1] in [".", "?","!",'"', "'"]:
             punc = lastword[:-1]
@@ -39,7 +55,11 @@ class App:
         hobj = hunspell.HunSpell('/usr/share/hunspell/en_US.dic', '/usr/share/hunspell/en_US.aff')
         
         if not hobj.spell(lastword):
-            fixed = hobj.suggest(lastword)[0] + punc
+
+            probs = [(sug,self.lm.prob(sug,context)) for sug in hobj.suggest(lastword)]
+            print probs
+
+            fixed = max(probs, key=itemgetter(1))[0] + punc
         else:
             fixed = lastword + punc
 
