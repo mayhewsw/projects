@@ -96,17 +96,17 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named camera
+# Target rules for targets named imageindexer
 
 # Build rule for target.
-camera: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 camera
-.PHONY : camera
+imageindexer: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 imageindexer
+.PHONY : imageindexer
 
 # fast build rule for target.
-camera/fast:
-	$(MAKE) -f CMakeFiles/camera.dir/build.make CMakeFiles/camera.dir/build
-.PHONY : camera/fast
+imageindexer/fast:
+	$(MAKE) -f CMakeFiles/imageindexer.dir/build.make CMakeFiles/imageindexer.dir/build
+.PHONY : imageindexer/fast
 
 #=============================================================================
 # Target rules for targets named mouse
@@ -134,29 +134,29 @@ perlerportraits/fast:
 	$(MAKE) -f CMakeFiles/perlerportraits.dir/build.make CMakeFiles/perlerportraits.dir/build
 .PHONY : perlerportraits/fast
 
-camera.o: camera.cpp.o
-.PHONY : camera.o
+imageindexer.o: imageindexer.cpp.o
+.PHONY : imageindexer.o
 
 # target to build an object file
-camera.cpp.o:
-	$(MAKE) -f CMakeFiles/camera.dir/build.make CMakeFiles/camera.dir/camera.cpp.o
-.PHONY : camera.cpp.o
+imageindexer.cpp.o:
+	$(MAKE) -f CMakeFiles/imageindexer.dir/build.make CMakeFiles/imageindexer.dir/imageindexer.cpp.o
+.PHONY : imageindexer.cpp.o
 
-camera.i: camera.cpp.i
-.PHONY : camera.i
+imageindexer.i: imageindexer.cpp.i
+.PHONY : imageindexer.i
 
 # target to preprocess a source file
-camera.cpp.i:
-	$(MAKE) -f CMakeFiles/camera.dir/build.make CMakeFiles/camera.dir/camera.cpp.i
-.PHONY : camera.cpp.i
+imageindexer.cpp.i:
+	$(MAKE) -f CMakeFiles/imageindexer.dir/build.make CMakeFiles/imageindexer.dir/imageindexer.cpp.i
+.PHONY : imageindexer.cpp.i
 
-camera.s: camera.cpp.s
-.PHONY : camera.s
+imageindexer.s: imageindexer.cpp.s
+.PHONY : imageindexer.s
 
 # target to generate assembly for a file
-camera.cpp.s:
-	$(MAKE) -f CMakeFiles/camera.dir/build.make CMakeFiles/camera.dir/camera.cpp.s
-.PHONY : camera.cpp.s
+imageindexer.cpp.s:
+	$(MAKE) -f CMakeFiles/imageindexer.dir/build.make CMakeFiles/imageindexer.dir/imageindexer.cpp.s
+.PHONY : imageindexer.cpp.s
 
 mouse.o: mouse.cpp.o
 .PHONY : mouse.o
@@ -212,14 +212,14 @@ help:
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
-	@echo "... camera"
 	@echo "... edit_cache"
+	@echo "... imageindexer"
 	@echo "... mouse"
 	@echo "... perlerportraits"
 	@echo "... rebuild_cache"
-	@echo "... camera.o"
-	@echo "... camera.i"
-	@echo "... camera.s"
+	@echo "... imageindexer.o"
+	@echo "... imageindexer.i"
+	@echo "... imageindexer.s"
 	@echo "... mouse.o"
 	@echo "... mouse.i"
 	@echo "... mouse.s"
