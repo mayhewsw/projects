@@ -8,6 +8,13 @@ Fair warning: this algorithm is quite slow. This is just a first pass - and sinc
 
 It is largely written in C++ using Opencv.
 
+## Usage
+```
+>  cmake .
+>  make
+>  ./imageindexer w
+>  ./imageindexer krogers.jpg
+```
 
 ## Webcam Screenshot
 The webcam version grabs a square from the middle of the video frame, scales it to 29x29 pixels, and indexes the small image by the palette. 
