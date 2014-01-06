@@ -14,6 +14,7 @@ Below is an example of a photo mapped to the perler bead color space.
 ![Alt text](palout-krogers.jpg "Optional title")
 
 ## Webcam Screenshot
+The webcam version grabs a square from the middle of the video frame, scales it to 29x29 pixels, and indexes the small image by the palette. 
 ![Screenshot ](webcam.png "Webcam screensho")
 
 
