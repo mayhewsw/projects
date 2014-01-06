@@ -8,13 +8,16 @@ Fair warning: this algorithm is quite slow. This is just a first pass - and sinc
 
 It is largely written in C++ using Opencv.
 
+
+## Webcam Screenshot
+The webcam version grabs a square from the middle of the video frame, scales it to 29x29 pixels, and indexes the small image by the palette. 
+![Screenshot ](webcam.png "Webcam screenshot")
+
+## Image Conversion
 Below is an example of a photo mapped to the perler bead color space. 
 
 ![Alt text](krogers.jpg "Optional title")
 ![Alt text](palout-krogers.jpg "Optional title")
 
-## Webcam Screenshot
-The webcam version grabs a square from the middle of the video frame, scales it to 29x29 pixels, and indexes the small image by the palette. 
-![Screenshot ](webcam.png "Webcam screensho")
 
 
