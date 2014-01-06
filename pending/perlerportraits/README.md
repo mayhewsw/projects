@@ -12,8 +12,8 @@ It is largely written in C++ using Opencv.
 ```
 >  cmake .
 >  make
->  ./imageindexer w
->  ./imageindexer krogers.jpg
+>  ./imageindexer w                   # this runs the webcam code
+>  ./imageindexer krogers.jpg         # this converts krogers.jpg using palette.png
 ```
 
 ## Webcam Screenshot
