@@ -6,8 +6,10 @@
 # 0-12
 # -5
 
-from player import RandomPlayer, Player, SlightlyBetterPlayer
-from random import shuffle
+from player import RandomPlayer, Player, SlightlyBetterPlayer, MinimizeCostPlayer
+from random import shuffle, choice
+from boarddrawer import BoardDrawer
+import operator
 import logging
 FORMAT = "[%(asctime)s] : %(filename)s.%(funcName)s():%(lineno)d - %(message)s"
 DATEFMT = '%H:%M:%S, %m/%d/%Y'
@@ -48,7 +50,7 @@ class Board():
             # now remove them from the drawpile
             self.drawpile = self.drawpile[Player.NUM_CARDS:]
 
-    def rungame(self, num=0):
+    def rungame(self, num=0, visualize=False):
         if num % 500 == 0:
             logger.debug("Run game : {}".format(num))
 
@@ -59,19 +61,30 @@ class Board():
             logger.error("Cannot play with 0 players!")
             return
 
+        # set up visualization
+        if visualize:
+            bd = BoardDrawer(self)
+
         totalturns = 0
         while True:
             for player in self.players:
+                totalturns += 1
                 if firsttogoout == player:
                     #logger.debug("END OF GAME!")
                     break
-                player.maketurn()
-                totalturns += 1
 
-                logger.debug(len(self.drawpile))
+                if visualize:
+                    bd.update(player)
+
+                player.maketurn()
+                # update board here.
+
+                #logger.debug(len(self.drawpile))
                 if len(self.drawpile) == 0:
-                    logger.debug("0 len drawpile!!!")
-                    sys.exit(-1)
+                    shuffle(self.discardpile)
+                    self.drawpile = self.discardpile
+                    self.discardpile = [self.drawpile[0]]
+                    del self.drawpile[0]
 
                 if player.isdone() and checkdone:
                     #logger.debug(str(player) + " has finished")
@@ -89,7 +102,8 @@ class Board():
         for p in self.players:
             s = p.score()
             #print("{} : {}".format(p, s))
-            if s < minscore:
+            op = choice([operator.le, operator.lt])
+            if op(s, minscore):
                 minscore = s
                 minp = p
         #logger.debug("Winner is: {} with score: {}".format(minp, minscore))
@@ -102,14 +116,19 @@ def runmanygames():
     winners = defaultdict(int)
     winnerscores = defaultdict(int)
 
-    for j in range(10000):
+    for j in range(200):
         b = Board()
-
 
         b.addplayer(RandomPlayer(1, b))
         b.addplayer(RandomPlayer(2, b))
+        #b.addplayer(SlightlyBetterPlayer(1, b))
+        #b.addplayer(SlightlyBetterPlayer(2, b))
         b.addplayer(SlightlyBetterPlayer(3, b))
         b.addplayer(SlightlyBetterPlayer(4, b))
+        #b.addplayer(MinimizeCostPlayer(3, b))
+        #b.addplayer(MinimizeCostPlayer(4, b))
+        b.addplayer(MinimizeCostPlayer(5, b))
+        b.addplayer(MinimizeCostPlayer(6, b))
 
         b.deal()
 
@@ -132,14 +151,14 @@ def runsinglegame():
 
     #b.addplayer(RandomPlayer(1, b))
     #b.addplayer(RandomPlayer(2, b))
-    b.addplayer(SlightlyBetterPlayer(1, b))
-    b.addplayer(SlightlyBetterPlayer(2, b))
-    b.addplayer(SlightlyBetterPlayer(3, b))
-    b.addplayer(SlightlyBetterPlayer(4, b))
+    #b.addplayer(SlightlyBetterPlayer(1, b))
+    #b.addplayer(SlightlyBetterPlayer(2, b))
+    b.addplayer(MinimizeCostPlayer(3, b))
+    b.addplayer(MinimizeCostPlayer(4, b))
 
     b.deal()
 
-    minscore, minp = b.rungame(1)
+    minscore, minp = b.rungame(1, visualize=True)
 
     #for p in b.players:
     #    print(p.mycards)
