@@ -12,4 +12,8 @@ Below is an example of a photo mapped to the perler bead color space.
 
 ![Alt text](krogers.jpg "Optional title")
 ![Alt text](palout-krogers.jpg "Optional title")
-![Alt text](palette.png "Optional title")
+
+## Webcam Screenshot
+![Screenshot ](webcam.png "Webcam screensho")
+
+
