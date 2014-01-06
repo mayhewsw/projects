@@ -14,13 +14,25 @@ using namespace std;
 using namespace cv;
 
 
-void index_image(Mat img, vector<Vec3b> indexcolors){
-    //cvtColor(subimg, subimg, CV_BGR2Lab);
-    
-    vector<Vec3b> v;
-    v.push_back(Vec3b(3, 4, 5));
+Mat index_image(Mat img, vector<Vec3b> indexcolors){
+    Mat labimg = img.clone();
+    cvtColor(img, labimg, CV_BGR2Lab);
 
+    Vec3b p;
+    for(int r = 0; r < img.rows; r++){
+        for(int c = 0; c < img.cols; c++){
+            p = labimg.at<Vec3b>(r,c);
+            //printf("(%u,%u,%u) ", p[0], p[1], p[2]);
+            // get the value from indexcolors that is closest to p
+            // set labimg to that value
+            labimg.at<Vec3b>(r,c) = indexcolors[14];
+            
+        }
+        //printf("\n");
+    }
     
+    cvtColor(labimg, img, CV_Lab2BGR);
+    return img;
 }
 
 vector<string> &split(const string &s, char delim, vector<string> &elems) {
@@ -104,18 +116,7 @@ int main( int argc, const char** argv )
                     r = Rect(frame.cols/2 - halfbox, frame.rows/2 - halfbox, 2*halfbox, 2*halfbox);
                     resize(frame(r), subimg, subimg.size(), 0, 0, INTER_NEAREST);
                     
-                    index_image(frame, indexcolors);
-                    
-                    // double sum=0;
-                    // for(int i = 0; i < subimg.rows; i++){
-                    //     const double* Mi = subimg.ptr<double>(i);
-                    //     for(int j = 0; j < subimg.cols; j++)
-                    //         sum += max(Mi[j], 0.);
-                    //     printf(
-                    // }
-                    //printf("sum %f\n", sum);
-                    Vec3b s = subimg.at<Vec3b>(0,0);
-                    printf("B: %u G: %u R: %u\n", s[0], s[1], s[2]);
+                    subimg = index_image(subimg, indexcolors);
                     
                     //printf("m.type() = %d\n", subimg.type());
                     
