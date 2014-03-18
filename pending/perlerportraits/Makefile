@@ -96,6 +96,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named cameratest
+
+# Build rule for target.
+cameratest: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 cameratest
+.PHONY : cameratest
+
+# fast build rule for target.
+cameratest/fast:
+	$(MAKE) -f CMakeFiles/cameratest.dir/build.make CMakeFiles/cameratest.dir/build
+.PHONY : cameratest/fast
+
+#=============================================================================
 # Target rules for targets named imageindexer
 
 # Build rule for target.
@@ -133,6 +146,43 @@ perlerportraits: cmake_check_build_system
 perlerportraits/fast:
 	$(MAKE) -f CMakeFiles/perlerportraits.dir/build.make CMakeFiles/perlerportraits.dir/build
 .PHONY : perlerportraits/fast
+
+#=============================================================================
+# Target rules for targets named videocaptest
+
+# Build rule for target.
+videocaptest: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 videocaptest
+.PHONY : videocaptest
+
+# fast build rule for target.
+videocaptest/fast:
+	$(MAKE) -f CMakeFiles/videocaptest.dir/build.make CMakeFiles/videocaptest.dir/build
+.PHONY : videocaptest/fast
+
+cameratest.o: cameratest.cpp.o
+.PHONY : cameratest.o
+
+# target to build an object file
+cameratest.cpp.o:
+	$(MAKE) -f CMakeFiles/cameratest.dir/build.make CMakeFiles/cameratest.dir/cameratest.cpp.o
+.PHONY : cameratest.cpp.o
+
+cameratest.i: cameratest.cpp.i
+.PHONY : cameratest.i
+
+# target to preprocess a source file
+cameratest.cpp.i:
+	$(MAKE) -f CMakeFiles/cameratest.dir/build.make CMakeFiles/cameratest.dir/cameratest.cpp.i
+.PHONY : cameratest.cpp.i
+
+cameratest.s: cameratest.cpp.s
+.PHONY : cameratest.s
+
+# target to generate assembly for a file
+cameratest.cpp.s:
+	$(MAKE) -f CMakeFiles/cameratest.dir/build.make CMakeFiles/cameratest.dir/cameratest.cpp.s
+.PHONY : cameratest.cpp.s
 
 imageindexer.o: imageindexer.cpp.o
 .PHONY : imageindexer.o
@@ -206,17 +256,46 @@ perlerportraits.cpp.s:
 	$(MAKE) -f CMakeFiles/perlerportraits.dir/build.make CMakeFiles/perlerportraits.dir/perlerportraits.cpp.s
 .PHONY : perlerportraits.cpp.s
 
+videocaptest.o: videocaptest.cpp.o
+.PHONY : videocaptest.o
+
+# target to build an object file
+videocaptest.cpp.o:
+	$(MAKE) -f CMakeFiles/videocaptest.dir/build.make CMakeFiles/videocaptest.dir/videocaptest.cpp.o
+.PHONY : videocaptest.cpp.o
+
+videocaptest.i: videocaptest.cpp.i
+.PHONY : videocaptest.i
+
+# target to preprocess a source file
+videocaptest.cpp.i:
+	$(MAKE) -f CMakeFiles/videocaptest.dir/build.make CMakeFiles/videocaptest.dir/videocaptest.cpp.i
+.PHONY : videocaptest.cpp.i
+
+videocaptest.s: videocaptest.cpp.s
+.PHONY : videocaptest.s
+
+# target to generate assembly for a file
+videocaptest.cpp.s:
+	$(MAKE) -f CMakeFiles/videocaptest.dir/build.make CMakeFiles/videocaptest.dir/videocaptest.cpp.s
+.PHONY : videocaptest.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
+	@echo "... cameratest"
 	@echo "... edit_cache"
 	@echo "... imageindexer"
 	@echo "... mouse"
 	@echo "... perlerportraits"
 	@echo "... rebuild_cache"
+	@echo "... videocaptest"
+	@echo "... cameratest.o"
+	@echo "... cameratest.i"
+	@echo "... cameratest.s"
 	@echo "... imageindexer.o"
 	@echo "... imageindexer.i"
 	@echo "... imageindexer.s"
@@ -226,6 +305,9 @@ help:
 	@echo "... perlerportraits.o"
 	@echo "... perlerportraits.i"
 	@echo "... perlerportraits.s"
+	@echo "... videocaptest.o"
+	@echo "... videocaptest.i"
+	@echo "... videocaptest.s"
 .PHONY : help
 
 
