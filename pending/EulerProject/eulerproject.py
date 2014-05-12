@@ -166,4 +166,11 @@ def prob10():
         
     return s
 
-
+def lcd(a, b):
+    """ returns the least common divisor,
+    i.e. the smallest number >1 that divides both
+    """
+    for i in range(2, min(a,b)):
+        if a%i == 0 and b%i == 0:
+            return i
+    return a
