@@ -8,11 +8,13 @@ import time
 from splinter import Browser
 import re
 from Strategy import Strategy, RandomStrategy
+from RuleStrategy import RuleStrategy
+from util import *
 
 ###############################################
 ### THIS IS THE ONLY THING THE USER WILL CHANGE
 
-strat = RandomStrategy()
+strat = RuleStrategy()
 trials = 2
 
 keydelay = 0.3
@@ -58,11 +60,15 @@ for t in range(trials):
         # this checks up on the current grid state
         div = browser.find_by_xpath("//div[contains(@class, 'tile-container')]")[0]
         grid = re.findall(pat, div.html)
+        grid = makeGrid(grid)
 
+        # FIXME: something's broken here.
         largest = max(map(int, map(lambda c: c[0], grid)))
         
-        # this makes a random move
+        # this selects a random move
         direc = strat.move(grid)
+
+        print direc
 
         # Actually make the move
         locals()[direc]()
