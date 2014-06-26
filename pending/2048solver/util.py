@@ -53,7 +53,6 @@ def canMoveDir(dr, grid):
     
     if dr == "right":
         # no need to rotate.
-        print grid
         pass
     elif dr == "up":
         # rotate 3 times

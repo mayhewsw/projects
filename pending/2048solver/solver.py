@@ -62,13 +62,11 @@ for t in range(trials):
         grid = re.findall(pat, div.html)
         grid = makeGrid(grid)
 
-        # FIXME: something's broken here.
-        largest = max(map(int, map(lambda c: c[0], grid)))
+        # max,max because it's two dimensional
+        largest = max([item for sublist in grid for item in sublist])
         
         # this selects a random move
         direc = strat.move(grid)
-
-        print direc
 
         # Actually make the move
         locals()[direc]()
