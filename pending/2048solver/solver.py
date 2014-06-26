@@ -29,13 +29,13 @@ pat = re.compile(r"tile-(\d+) tile-position-(\d)-(\d)")
 dirs = ["up", "down", "left", "right"]
 
 def mk(d, delay):
-    def a(dly = keydelay):
+    def a(dly = delay):
         time.sleep(dly)
         k.tap_key(eval("k.{0}_key".format(d)))
     return a
 
 for d in dirs:
-    locals()[d] = mk(d, delay)
+    locals()[d] = mk(d, keydelay)
 # UGLY ===========================================
 
 scores = []
@@ -59,11 +59,7 @@ for t in range(trials):
         div = browser.find_by_xpath("//div[contains(@class, 'tile-container')]")[0]
         grid = re.findall(pat, div.html)
 
-        print grid
-        firstg = map(lambda c: c[0], grid)
-        intfirstg = map(int, firstg)
-        largest = max(intfirstg)
-        print largest
+        largest = max(map(int, map(lambda c: c[0], grid)))
         
         # this makes a random move
         direc = strat.move(grid)
