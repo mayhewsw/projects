@@ -15,6 +15,8 @@ from Strategy import Strategy, RandomStrategy
 strat = RandomStrategy()
 trials = 2
 
+keydelay = 0.3
+
 ###############################################
 
 # Set up stuff
@@ -25,9 +27,9 @@ pat = re.compile(r"tile-(\d+) tile-position-(\d)-(\d)")
 
 # This section makes four functions called left(), 
 dirs = ["up", "down", "left", "right"]
-delay = 0.3
+
 def mk(d, delay):
-    def a(dly = delay):
+    def a(dly = keydelay):
         time.sleep(dly)
         k.tap_key(eval("k.{0}_key".format(d)))
     return a

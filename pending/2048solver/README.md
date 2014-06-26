@@ -8,10 +8,12 @@ Feel free to fork me and create your own strategy class! See if you can beat my 
 
 To run:
 
-`>> python solver.py`
+```
+>> python solver.py
+```
 
 
-THis uses splinter (http://splinter.cobrateam.info/) and PyUserInput (https://github.com/SavinaRoja/PyUserInput). I'm running this on Ubuntu 14.04, 32-bit.
+This uses splinter (http://splinter.cobrateam.info/) and PyUserInput (https://github.com/SavinaRoja/PyUserInput). I'm running this on Ubuntu 14.04, 32-bit.
    
    
    
