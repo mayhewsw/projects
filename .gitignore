@@ -41,5 +41,5 @@ nosetests.xml
 .idea
 
 # SVM stuff
-.model
-.lex
+*.model
+*.lex
