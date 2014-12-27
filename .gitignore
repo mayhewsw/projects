@@ -43,3 +43,9 @@ nosetests.xml
 # SVM stuff
 *.model
 *.lex
+
+# files in perlerportrait
+alan.jpg
+heidi.jpg
+heidi-small.jpg
+palout-heidi.jpg
