@@ -45,7 +45,14 @@ nosetests.xml
 *.lex
 
 # files in perlerportrait
-alan.jpg
-heidi.jpg
-heidi-small.jpg
-palout-heidi.jpg
+**/perlerportraits/alan.jpg
+**/perlerportraits/heidi.jpg
+**/perlerportraits/heidi-small.jpg
+**/perlerportraits/palout-heidi.jpg
+
+# automatically generated files
+**/perlerportraits/CMakeCache.txt
+**/perlerportraits/CMakeFiles/
+**/perlerportraits/Makefile
+**/perlerportraits/cmake_install.cmake
+                                
