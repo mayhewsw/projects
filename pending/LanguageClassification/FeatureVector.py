@@ -13,6 +13,9 @@ class FeatureVector:
         else:
             ind = self._featuremap.getInd(feat)
 
+        if ind < 0:
+            print str(ind) + " ERROR!!! ind shouldn't be 0 or -1"
+            
         if ind not in self.feats:
             self.feats.add(ind)
 
