@@ -8,16 +8,16 @@ import time
 from splinter import Browser
 import re
 from Strategy import Strategy, RandomStrategy
-from RuleStrategy import RuleStrategy
+from RuleStrategy import *
 from util import *
 
 ###############################################
 ### THIS IS THE ONLY THING THE USER WILL CHANGE
 
 strat = RuleStrategy()
-trials = 2
+trials = 3
 
-keydelay = 0.3
+keydelay = 0.1
 
 ###############################################
 
@@ -77,6 +77,7 @@ for t in range(trials):
         # find by xpath is too slow.
         if "game-over" in browser.html:
             print "game over!"
+            print "score: {0}".format(score)
             break
             
     scores.append(int(score))

@@ -134,7 +134,7 @@ int main( int argc, const char** argv )
 {
     //webcamfunc();
     if (argc < 2){
-        printf("Usage: blah blah\n");
+        printf("Usage: w for webcam, nothing to show the palette.\n");
         return 0;
     }
 
