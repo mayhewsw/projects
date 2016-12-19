@@ -1,9 +1,0 @@
-This was meant to be a better version of Apple's AutoComplete pop up in iOS.
-
-This requires: 
-  - hunspell
-  - libhunspell-dev
-  - pyhunspell: https://code.google.com/p/pyhunspell/
-  - nltk
-
-I had to do some fancy stuff to get pyhunspell to compile. That is, I had to change the required library to hunspell-1.3.
